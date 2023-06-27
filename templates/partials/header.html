@@ -1,0 +1,66 @@
+{% load static %}
+<header class="header-wrap style2">
+    <div class="header-bottom">
+    <div class="container">
+    <nav class="navbar navbar-expand-md navbar-light">
+    <a class="navbar-brand" href="{% url 'home' %}">
+    <img class="logo-light" src="{% static 'assets/img/nobleserve logo 1.png' %}" width="60px" alt="logo">
+    <img class="logo-dark" src="assets/img/nobleserve logo 1.png"  width="60px" alt="logo">
+    </a>
+    <div class="collapse navbar-collapse main-menu-wrap" id="navbarSupportedContent">
+    <div class="menu-close d-lg-none">
+    <a href="javascript:void(0)"> <i class="ri-close-line"></i></a>
+    </div>
+    <ul class="navbar-nav ms-auto">
+
+        <li class="nav-item active">
+            <a href="{% url 'loan' %}" class="nav-link">Loans</a>
+            </li>
+  
+  
+    <li class="nav-item">
+    <a href="{% url 'about' %}" class="nav-link">
+     Company
+    <i class="ri-arrow-down-s-line"></i>
+    </a>
+    <ul class="dropdown-menu">
+    <li class="nav-item">
+    <a href="{% url 'about' %}" class="nav-link">About Us</a>
+    </li>
+    <li class="nav-item">
+    <a href="features.html" class="nav-link">Our Features</a>
+    </li>
+    </ul>
+    </li>
+  
+    <li class="nav-item">
+        <a href="{% url 'faq' %}" class="nav-link">FAQs</a>
+        </li>
+
+    <li class="nav-item">
+    <a href="{% url 'contact' %}" class="nav-link">Contact Us</a>
+    </li>
+    <li class="nav-item d-lg-none">
+    <a href="{% url 'login' %}" class="nav-link btn style2">Log in Nobleserve</a>
+    <a href="{% url 'register' %}" class="nav-link btn style1">Get Started</a>
+    </li>
+    </ul>
+    <div class="other-options md-none">
+  
+    <div class="option-item">
+        <a href="{% url 'login' %}" class="nav-link btn style2">Log in Nobleserve</a>
+        <a href="{% url 'register' %}" class="nav-link btn style3">Get Started</a>
+    </div>
+    </div>
+    </div>
+    </nav>
+    <div class="mobile-bar-wrap">
+    
+    <div class="mobile-menu d-lg-none">
+    <a href="javascript:void(0)"><i class="ri-menu-line"></i></a>
+    </div>
+    </div>
+    </div>
+    </div>
+    </header>
+    

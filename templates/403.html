@@ -1,0 +1,35 @@
+{% extends "base.html" %}  
+{% load static %}
+{% block title %} Staff Dashboard {% endblock %}
+{% block content %}
+
+
+  <!-- begin app -->
+  <div class="app">
+    <!-- begin app-wrap -->
+    <div class="app-wrap">
+
+        <!-- begin pre-loader -->
+        {% include 'partials/preloader.html' %}
+        <!-- end pre-loader -->
+  <!--start error-404-contant-->
+  <div class="error-contant">
+    <div class="error-innr">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-8 text-center">
+                    <div class="error-text">
+                        <img class="img-fluid" src="{% static 'assets/img/logo.jpg' %}" style="width:100px" alt="Logo">
+                        <h3 class="m-t-30">You are not authorized to view this page!!</h3>
+                        <a href="{% url 'login' %}" class="btn btn-round btn-primary mt-3">Back to Home</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end error-404-contant-->      
+
+<!-- end app -->
+    {% endblock content %}
+
