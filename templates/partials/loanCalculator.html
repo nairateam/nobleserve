@@ -1,0 +1,124 @@
+<section class="calculator-area-2">
+    <div class="container">
+
+        <div class="section-title">
+            <span class="short-title-2  style1">Loan calculator</span>
+            <h1 class="wow fadeInUp text-white">Calculate and confirm your loans</h1>
+        </div>
+
+        <div class="calculator-widget-2 mt-50">
+            <div class="row  gy-lg-0 gy-3">
+                <div class="col-lg-7">
+                    <div class="single-calculator-widget wow fadeInUp" data-wow-delay="0.1s">
+                        <h4>Loan Calculator</h4>
+                        <div class="range-label mt-40">Loan Term</div>
+                        <nav>
+                            <div class="nav nav-tabs loan-type-select" id="nav-tab" role="tablist">
+                                <button class="nav-link active" id="yearTab-tab" data-bs-toggle="tab"
+                                    data-bs-target="#yearTab" type="button" role="tab" aria-controls="yearTab"
+                                    aria-selected="false">Yearly
+                                </button>
+                                <button class="nav-link " id="monthTab-tab" data-bs-toggle="tab"
+                                    data-bs-target="#monthTab" type="button" role="tab" aria-controls="monthTab"
+                                    aria-selected="false">Monthly</button>
+                                <button class="nav-link" id="weekTab-tab" data-bs-toggle="tab"
+                                    data-bs-target="#weekTab" type="button" role="tab" aria-controls="weekTab"
+                                    aria-selected="false">Weekly</button>
+                            </div>
+                        </nav>
+
+                        <div class="range-label">Loan Amount</div>
+                        <div class="single-range">
+                            <div id="RangeSlider"></div>
+                            <div class="input-group">
+                                <input class="noTextMerge" type="text" id="SetRange">
+                                <span class="input-group-text">$</span>
+                            </div>
+                        </div>
+                        <div class="range-label">Interest Rate</div>
+                        <div class="single-range">
+                            <div id="RoiRangeSlider"></div>
+                            <div class="input-group">
+                                <input type="text" id="SetRoiRange">
+                                <span class="input-group-text">%</span>
+                            </div>
+                        </div>
+                        <div class="range-label">Loan Duration</div>
+                        <div class="single-range">
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="yearTab" role="tabpanel"
+                                    aria-labelledby="yearTab">
+                                    <div id="YearRangeSlider"></div>
+                                </div>
+                                <div class="tab-pane fade " id="monthTab" role="tabpanel"
+                                    aria-labelledby="monthTab">
+                                    <div id="MonthRangeSlider"></div>
+                                </div>
+                                <div class="tab-pane fade" id="weekTab" role="tabpanel"
+                                    aria-labelledby="weekTab">
+                                    <div id="WeekRangeSlider"></div>
+                                </div>
+                            </div>
+                            <div class="input-group">
+                                <input class="noTextMerge" type="text" id="SetMonthRange">
+                                <span class="input-group-text loanTermIndicator">@example.com</span>
+                            </div>
+                        </div>
+                        <div class="d-flex loan-start-date">
+                            <div>
+                                <div class="range-label">Start Date</div>
+                                <div class="inp-container">
+                                    <input type="text" id="loanStartDate" placeholder="Select Date">
+                                </div>
+                            </div>
+                            <div>
+                                <div class="range-label">End Date</div>
+                                <div class="inp-container">
+                                    <input type="text" id="loanEndDate" placeholder="Select Date">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 pl-lg-35">
+                    <div class="calculator-result-widget wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="pie-wrapper mt-25" id="loan_graph_circle">
+                            <div class="label">Total Amount<h2 class="LoanTotalAmount"></h2>
+                            </div>
+                            <div class="pie">
+                                <div class="left-side half-circle"></div>
+                                <div class="right-side half-circle"></div>
+                            </div>
+                            <div class="circle-border"></div>
+                        </div>
+                        <div class="graph-indicator">
+                            <div><span class="blue-dot"></span> EMI Amount</div>
+                            <div><span class="orange-dot"></span> Interest Payable</div>
+                        </div>
+                        <ul class="loan-calculation list-unstyled">
+                            <li>
+                                <span class="label">EMI Amount (Principal + Interest)</span>
+                                <span class="amount LoanTotalAmount"></span>
+                            </li>
+                            <li>
+                                <span class="label">Interest Payable</span>
+                                <span class="amount" id="InterestPayable"></span>
+                            </li>
+                            <li>
+                                <span class="label">Loan Duration</span>
+                                <span class="amount LoanTotalDuration"></span>
+                            </li>
+                            <li>
+                                <span class="label">Your EMI Amount</span>
+                                <span class="amount" id="emiAmount"></span>
+                            </li>
+                        </ul>
+                        <a href="personal-details.html" class="theme-btn theme-btn-lg mt-20 w-100">Apply Now
+                            <i class="arrow_right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
