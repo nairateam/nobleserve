@@ -415,10 +415,11 @@
     SelectedRoi;
 
   if (typeof wNumb !== "undefined") {
+    let str = "\u20A6"
     var AmountFormat = wNumb({
       decimals: 0,
       thousand: ",",
-      prefix: "$",
+      prefix: str,
     });
     var AmountFormatNoMerge = wNumb({
       decimals: 0,
