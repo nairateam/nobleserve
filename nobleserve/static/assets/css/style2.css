@@ -9,9 +9,6 @@
     0px 1.6px 3.6px 0 rgba(51, 77, 114, 0.15);
 }
 
-
-
-
 /*  section title css */
 .section-title {
   text-align: center;
@@ -59,53 +56,8 @@
   line-height: 26px;
 }
 
-/*----------------------------------------*/
-/*       New Version
-/*----------------------------------------*/
-.underline-shape {
-  position: relative;
-  z-index: 1;
-  display: inline-block;
-}
-.underline-shape::after {
-  content: "";
-  position: absolute;
-  left: -4px;
-  width: calc(100% + 8px);
-  bottom: 7px;
-  background-color: #72b1ff;
-  z-index: -1;
-  height: 27%;
-}
 
-.read-more-btn {
-  font-size: 18px;
-   font-family: 'Cabinet Grotesk', sans-serif;
-  font-weight: 500;
-  color: var(--primary-color);
-  display: inline-block;
-  margin-top: 30px;
-}
-.read-more-btn span {
-  position: relative;
-}
-.read-more-btn span::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  width: 0px;
-  height: 1px;
-  background-color: var(--primary-color);
-  transition: all 0.3s ease-out;
-  left: 0;
-}
-.read-more-btn:hover span::after {
-  width: 100%;
-}
-.read-more-btn i {
-  font-size: 18px;
-  vertical-align: middle;
-}
+
 
 /*-------------   End    ------------------*/
 
