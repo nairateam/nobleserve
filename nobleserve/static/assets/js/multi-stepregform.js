@@ -13,7 +13,7 @@ $(document).ready(function() {
 	randomAlert();
 });
 
-$('.btn').click(function(event) {
+$('.btn1').click(function(event) {
     event.preventDefault();
     var target = $(this).data('target');
 	// console.log('#'+target);

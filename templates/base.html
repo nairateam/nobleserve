@@ -34,7 +34,8 @@
      <link rel="stylesheet" type="text/css" href="{% static 'assets/css/jquery.fancybox.min.css' %} " media="all" />
      <link rel="stylesheet" type="text/css" href="{% static 'assets/css/flatpickr.min.css' %} " media="all" />
      <link rel="stylesheet" href="{% static 'assets/css/style2.css' %}">
-    
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   
 </head>
     <body>       
     {% block content %}
@@ -43,12 +44,11 @@
 {% endblock %}
     <!-- Back to top button -->
     <a id="back-to-top" title="Back to Top"></a>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="{% static 'assets/js/multi-stepregform.js' %}"></script> 
-    <script src="{% static 'assets/js/countries.js' %}"></script>   
-
+   
 
     <script src="{% static 'assets/js/bootstrap.bundle.min.js' %}"></script>
+    
+   
      <script type="text/javascript" src="{% static 'assets/js/jquery.smoothscroll.min.js' %}"></script>
     <script type="text/javascript" src="{% static 'assets/js/slick.min.js' %}"></script>
     <script type="text/javascript" src="{% static 'assets/js/jquery.fancybox.min.js' %}"></script>
@@ -56,7 +56,21 @@
     <script type="text/javascript" src="{% static 'assets/js/wNumb.js' %}"></script>
     <script type="text/javascript" src="{% static 'assets/js/flatpickr.min.js' %}"></script>
     <script type="text/javascript" src="{% static 'assets/js/wow.min.js' %}"></script>
+
+    <script src="{% static 'assets/js/multi-stepregform.js' %}"></script> 
+    <script src="{% static 'assets/js/countries.js' %}"></script>  
+
+    
+
+    <script language="javascript">
+        populateCountries("country2");
+     populateCountries("country2");
+ </script>
+ 
     <script type="text/javascript" src="{% static 'assets/js/custom.js' %}"></script>
+ 
+
+  
 
     <script src="{% static 'assets/js/aos.js' %}"></script>
     <script src="{% static 'assets/js/owl.carousel.min.js' %}"></script>
@@ -66,12 +80,7 @@
     <script src="{% static 'assets/js/jquery.appear.js' %}"></script>
     <script src="{% static 'assets/js/tweenmax.min.js' %}"></script>
     <script src="{% static 'assets/js/main.js' %}"></script>   
-
-    <script language="javascript">
-           populateCountries("country2");
-        populateCountries("country2");
-    </script>
-    
+  
 </body>
     
     </html>
