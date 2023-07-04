@@ -976,7 +976,14 @@ input[type="submit"]:hover {
 }
 
 .btn.style2 {
-  background-color: #fff;
+  color: #052E60;
+  border: 1px solid;
+  border-radius: 100px;
+  padding: 8px 20px 8px;
+}
+
+.btn.style20 {
+  background-color:  #052E60;
   color: #052E60;
   border: 1px solid;
   border-radius: 100px;
@@ -2296,7 +2303,7 @@ input[type="submit"]:hover {
     color: #000;
   }
   .main-menu li a.active {
-    color: #00A79D;
+    color: #AD1D27;
   }
   .main-menu li > a {
     font-size: 14px;
