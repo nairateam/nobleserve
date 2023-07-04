@@ -413,6 +413,132 @@ select {
   overflow-x: hidden;
 }
 
+
+
+/*start loan calculator*/
+
+section.registration s {
+  position: relative;
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+section.registration s:before {
+  position: absolute;
+  width: 50%;
+  left: 0;
+  top: 0;
+  background-color: #063873;
+  content: "";
+  height: 100%;
+}
+
+.calculator-form {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.form-title h2 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.form-title p {
+  color: #9ea7ba;
+  font-size: 17px
+}
+
+.form-title {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.single-select label {
+  width: 100%;
+  display: block;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 400;
+  font-family: 'Muli', sans-serif;
+  margin-bottom: 10px;
+}
+
+.single-select input {
+  width: 100%;
+  height: 50px;
+  background: #2e3441;
+  color: #fff;
+  padding-left: 10px;
+  border: 1px solid #404755;
+  border-radius: 4px;
+  -webkit-appearance: none;
+}
+
+.single-select input::-webkit-input-placeholder {
+  color: #fff;
+  opacity: 1
+}
+
+.single-input label {
+  display: block;
+  width: 100%;
+  color: #fff;
+  font-weight: 400;
+  font-size: 20px;
+  font-family: 'Muli', sans-serif;
+  margin-bottom: 10px;
+}
+
+.single-select {
+  margin-bottom: 20px;
+}
+
+.single-input input::-webkit-input-placeholder {
+  color: #fff;
+  opacity: 1
+}
+
+.single-input input {
+  width: 100%;
+  height: 50px;
+  padding-left: 10px;
+  background-color: #2e3441;
+  border: 1px solid #404755;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.single-input {
+  margin-bottom: 20px
+}
+
+.submitbtn {
+  text-align: center;
+}
+
+input[type="submit"] {
+  width: 150px;
+  height: 50px;
+  display: inline-block;
+  background-color: #24c8a6;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  padding-left: 0;
+  transition: .4s
+}
+
+input[type="submit"]:hover {
+  background: #3a7cdd;
+  color: #fff
+}
+
+
+/*end  of calculate section*/
+
 /*---------------------------------
           Mixins & Animation CSS
 -----------------------------------*/
@@ -5283,6 +5409,101 @@ font-family: 'Cabinet Grotesk', sans-serif;
 }
 
 
+/*----------------------------------------*/
+/*   Get In Touch Area CSS
+/*----------------------------------------*/
+.get-touch-area .get-touch-box {
+  display: flex;
+  align-items: flex-start;
+}
+.get-touch-area .get-touch-box .icon {
+  margin-right: 8px;
+}
+.get-touch-area .get-touch-box .icon img {
+  vertical-align: text-top;
+}
+.get-touch-area .get-touch-box .icon i {
+  font-size: 18px;
+  color: var(--primary-color);
+}
+.get-touch-area .get-touch-box p {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: var(--theme-title-color);
+  margin-bottom: 8px;
+  line-height: 24px;
+}
+.get-touch-area .get-touch-box span {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: var(--theme-text-color);
+  line-height: 22px;
+}
+
+.get-touch-area-2 {
+  padding: 128px 0;
+  background: url(../img/home-5/get-touch-bg.png), #0e1520;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: initial;
+}
+.get-touch-area-2 h1 {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 58px;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+.get-touch-area-2 p {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #eeeeee;
+  margin-bottom: 0;
+}
+.get-touch-area-2 .consult-num {
+  margin-top: 40px;
+  display: flex;
+}
+.get-touch-area-2 .consult-num > div {
+  width: 50%;
+}
+.get-touch-area-2 .consult-num h1 {
+  font-size: 52px;
+  font-weight: 500;
+  line-height: 60px;
+  color: #d1edf5;
+  margin-bottom: 2px;
+}
+.get-touch-area-2 .consult-num p {
+  line-height: 24px;
+  color: #fff;
+}
+.get-touch-area-2 .touch-form {
+  padding: 60px 48px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+.get-touch-area-2 .touch-form h3 {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 36px;
+  margin-bottom: 40px;
+  color: #242527;
+}
+.get-touch-area-2 .touch-form .form-control {
+  border-radius: 4px;
+  background-color: #f2f0ef;
+  border-color: #f2f0ef;
+  height: 56px;
+  line-height: 56px;
+  margin-bottom: 16px;
+  padding-left: 24px;
+}
+
 
 /*-------------------------------
          Pricing Table CSS
@@ -6461,3 +6682,148 @@ padding-top: 20px;
 .help-wrap-two .help-img-wrap .help-img .help-promo-text span {
   color: #fff;
 }
+
+/*# Login container*/
+
+.section-authentication-signin {
+	height: 100vh;
+  color:#fff;
+
+}
+
+.auth-cover-left {
+	display: flex;
+	background-color: #063873;
+	min-height: 100vh;
+  color: #fff;
+
+}
+
+
+.auth-cover-left .hero-content {
+  padding-left: 60px;
+  padding-top: 60px;
+}
+
+
+.auth-cover-left .hero-content h1{
+  color:#fff;
+  padding-top: 25px;
+  line-height: 45px;
+}
+
+.auth-cover-left .hero-content p{
+  color:#fff;
+}
+
+
+.auth-cover-right {
+	display: flex;
+	background-color: #ffffff;
+	min-height: 100vh;
+  margin-top: -60px;
+
+}
+
+.auth-cover-right h4 {
+	border:0px;
+  padding-top: 10px;
+
+}
+
+
+
+.auth-img-cover-login {
+
+	-webkit-transform: scaleX(-1);
+
+	transform: scaleX(-1);
+
+}
+
+
+
+
+
+
+
+.error {
+
+    color: #dc3545;
+
+}
+
+
+
+form select.error,
+
+form textarea.error,
+
+form input.error,
+
+form input.error:focus,
+
+form textarea.error:focus,
+
+form select.error:focus {
+
+    border-color: #ea5455 !important;
+
+}
+
+
+
+
+@media screen and (max-width:991px) {
+
+	.section-authentication-signin {
+
+		height: 100%;
+
+		margin-top: 6rem;
+
+		margin-bottom: 2rem
+
+	}
+
+	.authentication-reset-password {
+
+		height: auto;
+
+		padding: 2rem 1rem
+
+	}
+
+	.authentication-lock-screen {
+
+		height: auto;
+
+		padding: 2rem 1rem
+
+	}
+
+	
+
+.auth-cover-left .hero-content {
+  padding-left: 20px;
+  padding-top: 50px;
+}
+
+
+.auth-cover-left .hero-content h1{
+  color:#fff;
+  padding-top: 25px;
+  line-height: 40px;
+}
+
+.auth-cover-left .hero-content p{
+  color:#fff;
+  
+}
+
+br{
+  display: none;
+  }
+
+}
+
