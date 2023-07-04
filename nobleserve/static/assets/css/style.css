@@ -6862,6 +6862,12 @@ form select.error:focus {
 
 	}
 
+  .auth-cover-left {
+    display: none;
+  }
+
+
+  
 	.authentication-reset-password {
 
 		height: auto;
@@ -6883,6 +6889,7 @@ form select.error:focus {
 .auth-cover-left .hero-content {
   padding-left: 20px;
   padding-top: 50px;
+  
 }
 
 
