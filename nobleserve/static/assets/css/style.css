@@ -895,6 +895,8 @@ input[type="submit"]:hover {
 
 
 
+
+
 .btn.style1:after, .btn.style1:before {
   background: #252525;
 }
@@ -6683,7 +6685,7 @@ padding-top: 20px;
   color: #fff;
 }
 
-/*# Login container*/
+/*# form registration and login*/
 
 .section-authentication-signin {
 	height: 100vh;
@@ -6721,7 +6723,7 @@ padding-top: 20px;
 	display: flex;
 	background-color: #ffffff;
 	min-height: 100vh;
-  margin-top: -60px;
+  margin-top: 10px;
 
 }
 
@@ -6827,3 +6829,73 @@ br{
 
 }
 
+
+
+/*# step form registration and login*/
+#regForm {
+  background-color: #fff;
+  font-family: 'Cabinet Grotesk', sans-serif;
+  
+}
+
+
+
+input, textarea ,select {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  font-family: 'Cabinet Grotesk', sans-serif;
+  border: 1px solid #aaaaaa;
+  border-radius: 5px;
+
+}
+
+
+/* Mark input boxes that get errors during validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+
+button {
+  background-color: #4CAF50;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 17px;
+  font-family: 'Cabinet Grotesk', sans-serif;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+#prevBtn {
+    background-color: #AD1D27;
+}
+
+/* Step marker: Place in the form. */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #063873;
+  border: none;  
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #063873;
+}

@@ -68,27 +68,73 @@
                                     <p class="mb-0">Already have an account? <a class="text-bold" href="{% url 'login' %}">Sign in</a></p>
                                 </div>
                                 <div class="form-body">
-                                    <form class="row g-3">
+                                    <form  id="regForm" class="row g-3">
                                       
-                                        <div class="col-12">
-                                            <label for="inputEmailAddress" class="form-label">Email Address</label>
-                                            <input type="email" class="form-control" id="inputEmailAddress" placeholder="example@user.com">
-                                        </div>
-                                        <div class="col-12">
-                                            <label for="inputChoosePassword" class="form-label">Password</label>
-                                            <div class="input-group" id="show_hide_password">
-                                                <input type="password" class="form-control border-end-0" id="inputChoosePassword" value="12345678" placeholder="Enter Password"> <a href="javascript:;" class="input-group-text bg-transparent"><i class='bx bx-hide'></i></a>
-                                            </div>
-                                        </div>
-                                            <div class="col-12">
-                                                <div class="text-end ptb-10" >	<a style=" color:red" href="authentication-forgot-password.html">Forgot Password ?</a>
-                                        
-                                            </div>
-                                        <div class="col-12">
-                                            <div class="d-grid ">
-                                                <button type="submit" class="btn  style1">REGISTER <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path fill="currentColor" fill-rule="evenodd" d="M2 10a.75.75 0 0 1 .75-.75h12.59l-2.1-1.95a.75.75 0 1 1 1.02-1.1l3.5 3.25a.75.75 0 0 1 0 1.1l-3.5 3.25a.75.75 0 1 1-1.02-1.1l2.1-1.95H2.75A.75.75 0 0 1 2 10Z" clip-rule="evenodd"/></svg></button>
-                                            </div>
-                                        </div>
+                                        <!-- One "tab" for each step in the form: -->
+  <div class="tab">
+    <div class="row">
+        <div class="col-6">
+            <label for="inputEmailAddress " class="form-label">First name</label>
+            <input type="email" class="form-control" id="inputEmailAddress" placeholder="">
+        </div>
+        <div class="col-6">
+            <label for="inputEmailAddress" class="form-label">Last name</label>
+            <input type="email" class="form-control mb-2" id="inputEmailAddress" placeholder="">
+        </div>
+    </div>
+  
+    <div class="col-12">
+        <label for="inputEmailAddress" class="form-label ">Email Address</label>
+        <input type="email" class="form-control mb-2" id="inputEmailAddress" placeholder="">
+    </div>
+
+    <div class="col-12">
+        <label for="inputEmailAddress" class="form-label ">Country</label>
+        <select id="country2" class="form-control" name ="country2"></select>
+    
+    </div>
+
+   
+
+
+  </div>
+
+
+
+  <div class="tab">
+    <div class="col-12">
+        <label for="inputChoosePassword" class="form-label">Password</label>
+            <input type="password" class="form-control mb-2" placeholder="">       
+    </div>
+
+    <div class="col-12">
+        <label for="inputChoosePassword" class="form-label">Confirm Password</label>
+        <input type="password" class="form-control mb-2" placeholder="">     
+    </div>
+
+  </div>
+ 
+  <div class="tab">
+    <p><input placeholder="Username..." oninput="this.className = ''" name="uname"></p>
+    <p><input placeholder="Password..." oninput="this.className = ''" name="pword" type="password"></p>
+  </div>
+
+
+  <div style="overflow:auto;">
+    <div style="float:right;">
+        <button type="submit"  id="prevBtn" onclick="nextPrev(-1)" class="btn  style1">Previous <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path fill="currentColor" fill-rule="evenodd" d="M2 10a.75.75 0 0 1 .75-.75h12.59l-2.1-1.95a.75.75 0 1 1 1.02-1.1l3.5 3.25a.75.75 0 0 1 0 1.1l-3.5 3.25a.75.75 0 1 1-1.02-1.1l2.1-1.95H2.75A.75.75 0 0 1 2 10Z" clip-rule="evenodd"/></svg></button>
+        
+        <button type="submit" id="nextBtn" onclick="nextPrev(1)" class="btn  style1">Next </button>
+     
+          </div>
+  </div>
+  <!-- Circles which indicates the steps of the form: -->
+  <div style="text-align:center;margin-top:40px;">
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+  </div>
+                                       
                                      
                                     </form>
                                 </div>
