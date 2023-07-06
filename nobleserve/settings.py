@@ -102,7 +102,6 @@ DATABASES = {
         'HOST': 'Fegor.mysql.pythonanywhere-services.com',
     }
 }
-
 #define it to use model.
 AUTH_USER_MODEL = 'accounts.User'
 
