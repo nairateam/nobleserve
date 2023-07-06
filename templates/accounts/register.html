@@ -82,18 +82,17 @@
             <input type="email" class="form-control mb-2" id="inputEmailAddress" placeholder="">
         </div>
     </div>
-  
-    <div class="col-12">
-        <label for="inputEmailAddress" class="form-label ">Email Address</label>
-        <input type="email" class="form-control mb-2" id="inputEmailAddress" placeholder="">
-    </div>
 
     <div class="col-12">
         <label for="inputEmailAddress" class="form-label ">Country</label>
-        <select id="country2" class="form-control" name ="country2"></select>
+        <select id="country2" class="form-control  mb-2" name ="country2"></select>
     
     </div>
 
+    <div class="col-12">
+        <label for="inputEmailAddress" class="form-label ">Photo</label>
+        <input type="file" class="form-control"  placeholder="">
+    </div>
    
 
 
@@ -102,6 +101,12 @@
 
 
   <div class="tab">
+
+    <div class="col-12">
+        <label for="inputEmailAddress" class="form-label ">Email Address</label>
+        <input type="email" class="form-control mb-2" id="inputEmailAddress" placeholder="">
+    </div>
+
     <div class="col-12">
         <label for="inputChoosePassword" class="form-label">Password</label>
             <input type="password" class="form-control mb-2" placeholder="">       
@@ -112,35 +117,15 @@
         <input type="password" class="form-control mb-2" placeholder="">     
     </div>
 
-  </div>
- 
-  <div class="tab">
 
-    <div class="row">
-        <hr/>
-        <p class="text-center" style="font-weight:bold">Use your device Camera to take a Selfie.</p>
-        <div class="col-6">
-            <div id="camera" class="camera">
-                <video id="video" >Video stream not available.</video>
-                <button id="startbutton" type="button">Take photo</button>
-                <input id="webimg" value="" name="src" type="text" style="display: none;">
-                <canvas id="canvas">
-                </canvas>
-            </div>
-        
-        </div>
-        <div class="col-6">
-         
-            <img id="photo" alt="your image" >
-               </div>
-    </div>
+
    
 </div>
 
 
   <div style="overflow:auto;">
     <div style="float:right;">
-        <button type="submit"  id="prevBtn" onclick="nextPrev(-1)" class="btn1  style1">Previous <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path fill="currentColor" fill-rule="evenodd" d="M2 10a.75.75 0 0 1 .75-.75h12.59l-2.1-1.95a.75.75 0 1 1 1.02-1.1l3.5 3.25a.75.75 0 0 1 0 1.1l-3.5 3.25a.75.75 0 1 1-1.02-1.1l2.1-1.95H2.75A.75.75 0 0 1 2 10Z" clip-rule="evenodd"/></svg></button>
+        <button type="submit"  id="prevBtn" onclick="nextPrev(-1)" class="btn1  style1"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path fill="currentColor" fill-rule="evenodd" d="M2 10a.75.75 0 0 1 .75-.75h12.59l-2.1-1.95a.75.75 0 1 1 1.02-1.1l3.5 3.25a.75.75 0 0 1 0 1.1l-3.5 3.25a.75.75 0 1 1-1.02-1.1l2.1-1.95H2.75A.75.75 0 0 1 2 10Z" clip-rule="evenodd"/></svg> Previous </button>
         
         <button type="submit" id="nextBtn" onclick="nextPrev(1)" class="btn1  style1">Next </button>
      

@@ -669,11 +669,12 @@ input[type="submit"]:hover {
   border-radius: 4px;
   position: fixed;
   bottom: 30px;
-  right: 30px;
+  right: 90px;
   transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
   opacity: 0;
   visibility: hidden;
   z-index: 1000;
+  align-items: left;
 }
 
 #back-to-top::after {
@@ -702,6 +703,19 @@ input[type="submit"]:hover {
 #back-to-top.show {
   opacity: 1;
   visibility: visible;
+}
+
+
+/*---------------------------------
+     Whatsapp Chat CSS
+-----------------------------------*/
+.whatsapp-chat{
+  display: inline-block;
+  text-align: center;
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  z-index: 1000;
 }
 
 /*---------------------------------
