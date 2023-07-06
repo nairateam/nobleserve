@@ -21,11 +21,11 @@ def faq(request):
 
 # Login
 def login(request):
-    return render(request, 'pages/login.html')
+    return render(request, 'accounts/login.html')
 
 # Register
 def register(request):
-    return render(request, 'pages/register.html')
+    return render(request, 'accounts/register.html')
 
 # Loan
 def loan(request):
