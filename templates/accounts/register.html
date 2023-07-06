@@ -2,7 +2,7 @@
 {% extends "base.html" %}  
 {% load static %}
 {% block title %} Register {% endblock %}
-
+{% load widget_tweaks %}
 {% block content %}
 
 {% load static %}
@@ -68,53 +68,85 @@
                                     <p class="mb-0">Already have an account? <a class="text-bold" href="{% url 'login' %}">Sign in</a></p>
                                 </div>
                                 <div class="form-body">
-                                    <form  id="regForm" method="POST" enctype='multipart/form-data' class="row g-3">
-                                      
+                                    <form  id="regForm" method="POST" enctype='multipart/form-data' class="row g-3">                                     
+                                        {% csrf_token %}
+                                        {% include 'partials/alerts.html' %}
+                                       
                                         <!-- One "tab" for each step in the form: -->
   <div class="tab">
     <div class="row">
         <div class="col-6">
             <label for="inputEmailAddress " class="form-label">First name</label>
-            <input type="email" class="form-control" id="inputEmailAddress" placeholder="">
+            {% render_field form.first_name class="form-control" %}
         </div>
         <div class="col-6">
             <label for="inputEmailAddress" class="form-label">Last name</label>
-            <input type="email" class="form-control mb-2" id="inputEmailAddress" placeholder="">
+            {% render_field form.last_name class="form-control" %}
         </div>
     </div>
 
-    <div class="col-12">
-        <label for="inputEmailAddress" class="form-label ">Country</label>
-        <select id="country2" class="form-control  mb-2" name ="country2"></select>
-    
+
+    <div class="row">
+        <div class="col-6">
+            <label for="inputEmailAddress" class="form-label ">Phone Number</label>
+        {% render_field customer_form.phone_number class="form-control" %}
+        </div>
+        <div class="col-6">
+            <label for="inputEmailAddress" class="form-label ">Country</label>
+            {% render_field customer_form.country class="form-control" %}
+         
+        </div>
     </div>
+
+   
+  
 
     <div class="col-12">
         <label for="inputEmailAddress" class="form-label ">Photo</label>
-        <input type="file" class="form-control"  placeholder="">
+        {% render_field customer_form.photo  class="form-control" %}
+     
     </div>
    
+<br>
+    <span class="errorlist">
+        {% for field in form %}
+            {% if field.errors %}
+                {% for error in field.errors %}
+                    <span style="color: red;">{{error}}</span>
+                {% endfor %}
+            {% endif %}
+        {% endfor %}
 
-
+        <span style="color: red;">{{form.non_field_errors}}</span>
+        </span>
   </div>
 
 
 
   <div class="tab">
-
-    <div class="col-12">
-        <label for="inputEmailAddress" class="form-label ">Email Address</label>
-        <input type="email" class="form-control mb-2" id="inputEmailAddress" placeholder="">
+    <div class="row">
+        <div class="col-5">
+            <label for="inputEmailAddress " class="form-label">User name</label>
+            {% render_field form.username class="form-control" %}
+        </div>
+        <div class="col-7">
+            <label for="inputEmailAddress" class="form-label ">Email Address</label>
+            {% render_field form.email  class="form-control" %}
+        </div>
     </div>
+    
 
+
+    
     <div class="col-12">
         <label for="inputChoosePassword" class="form-label">Password</label>
-            <input type="password" class="form-control mb-2" placeholder="">       
+        {% render_field form.password class="form-control" %}
+            
     </div>
 
     <div class="col-12">
         <label for="inputChoosePassword" class="form-label">Confirm Password</label>
-        <input type="password" class="form-control mb-2" placeholder="">     
+        {% render_field form.confirm_password class="form-control" %}   
     </div>
 
 
@@ -128,7 +160,9 @@
         <button type="submit"  id="prevBtn" onclick="nextPrev(-1)" class="btn1  style1"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path fill="currentColor" fill-rule="evenodd" d="M2 10a.75.75 0 0 1 .75-.75h12.59l-2.1-1.95a.75.75 0 1 1 1.02-1.1l3.5 3.25a.75.75 0 0 1 0 1.1l-3.5 3.25a.75.75 0 1 1-1.02-1.1l2.1-1.95H2.75A.75.75 0 0 1 2 10Z" clip-rule="evenodd"/></svg> Previous </button>
         
         <button type="submit" id="nextBtn" onclick="nextPrev(1)" class="btn1  style1">Next </button>
-     
+       
+        <button type="submit"  id="submitBtn" class="btn style1">Submit</button>
+       
           </div>
   </div>
   <!-- Circles which indicates the steps of the form: -->
@@ -137,7 +171,7 @@
     <span class="step"></span>
     <span class="step"></span>
   </div>
-                                       
+                            
                                      
                                     </form>
                                 </div>

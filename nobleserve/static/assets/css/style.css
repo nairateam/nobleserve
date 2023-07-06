@@ -5866,7 +5866,7 @@ border-radius: 10px 10px 0px 0px;
 }
 
 .convert-box .convert-tabcontent button.style1 {
-  background-color: #00A79D;
+
   display: inline-block;
   width: auto;
   padding: 14px 30px;
@@ -6964,8 +6964,7 @@ input.invalid {
 }
 
 button {
-  background-color: #4CAF50;
-  color: #ffffff;
+  background: transparent;
   border: none;
   padding: 10px 20px;
   font-size: 17px;

@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/4.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
-
+from django.contrib.messages import constants as messages
 from pathlib import Path
 from decouple import config
 import os
@@ -42,6 +42,10 @@ INSTALLED_APPS = [
 
     'accounts',
     'customers',
+    'widget_tweaks',
+    'django_countries'
+    
+   
 ]
 
 MIDDLEWARE = [
@@ -86,6 +90,16 @@ DATABASES = {
         'PASSWORD': config('DB_PASSWORD'),
         'HOST': config('DB_HOST'),
     }
+}
+
+
+#define it to use model.
+AUTH_USER_MODEL = 'accounts.User'
+
+
+# Messages
+MESSAGE_TAGS = {
+    messages.ERROR: 'danger',
 }
 
 
