@@ -1,0 +1,105 @@
+
+
+{% extends "base.html" %}  
+{% load static %}
+{% block title %} FAQ {% endblock %}
+
+{% block content %}
+<div class="page-wrapper">
+{% include 'partials/preloader.html' %}
+{% include 'partials/header.html' %}
+
+
+
+<div class="breadcrumb-wrap bg-f br-1" style="margin-top:70px">
+    <div class="container">
+    <div class="breadcrumb-title">
+    <h2>Frequently Asked Questions</h2>
+   
+    </div>
+    </div>
+    </div>
+    
+
+    <div class="faq-area ptb-100">
+        <div class="container">
+        <div class="row align-items-center">
+        <div class="col-lg-6 col-md-12">
+        <div class="faq-accordion mb-25">
+        <div class="accordion" id="FaqAccordion">
+        <div class="accordion-item">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        What Is A Multi-Currency Account And How Does It Work?
+        </button>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#FaqAccordion">
+        <div class="accordion-body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est nibh felis tortor viverra pulvinar nibh tincidunt pellentesque dolor. Sem lectus magna metus sit felis, ipsum, et. Auctor tellus id nunc nibh felis aliquam.</p>
+        </div>
+        </div>
+        </div>
+        <div class="accordion-item">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        What Happened To The Borderless Account?
+        </button>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#FaqAccordion">
+        <div class="accordion-body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est nibh felis tortor viverra pulvinar nibh tincidunt pellentesque dolor. Sem lectus magna metus sit felis, ipsum, et. Auctor tellus id nunc nibh felis aliquam.</p>
+        </div>
+        </div>
+        </div>
+        <div class="accordion-item">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        Can I Hold Multiple Currencies In A Snuff Account?
+        </button>
+        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#FaqAccordion">
+        <div class="accordion-body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est nibh felis tortor viverra pulvinar nibh tincidunt pellentesque dolor. Sem lectus magna metus sit felis, ipsum, et. Auctor tellus id nunc nibh felis aliquam.</p>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        <div class="col-lg-6 col-md-12">
+        <div class="faq-accordion">
+        <div class="accordion" id="FaqAccordionTwo">
+        <div class="accordion-item">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+        What Is The Best Features And Services We Deliver?
+        </button>
+        <div id="collapseFour" class="accordion-collapse collapse show" data-bs-parent="#FaqAccordionTwo">
+        <div class="accordion-body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est nibh felis tortor viverra pulvinar nibh tincidunt pellentesque dolor. Sem lectus magna metus sit felis, ipsum, et. Auctor tellus id nunc nibh felis aliquam.</p>
+        </div>
+        </div>
+        </div>
+        <div class="accordion-item">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+        What Are The Objectives Of This Service?
+        </button>
+        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#FaqAccordionTwo">
+        <div class="accordion-body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est nibh felis tortor viverra pulvinar nibh tincidunt pellentesque dolor. Sem lectus magna metus sit felis, ipsum, et. Auctor tellus id nunc nibh felis aliquam.</p>
+        </div>
+        </div>
+        </div>
+        <div class="accordion-item">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+        What Is A Multi-currency Card?
+        </button>
+        <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#FaqAccordionTwo">
+        <div class="accordion-body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est nibh felis tortor viverra pulvinar nibh tincidunt pellentesque dolor. Sem lectus magna metus sit felis, ipsum, et. Auctor tellus id nunc nibh felis aliquam.</p>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        
+
+    {% include 'partials/footer.html' %}
+    {% endblock content %}

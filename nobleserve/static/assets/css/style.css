@@ -5396,6 +5396,103 @@ font-family: 'Cabinet Grotesk', sans-serif;
   visibility: visible;
   opacity: 1;
 }
+
+
+
+/*================================================
+FAQ Area CSS
+=================================================*/
+.faq-area {
+  overflow: hidden;
+}
+
+.faq-area .section-title {
+  max-width: 645px;
+}
+
+.faq-item .faq-content {
+  margin-bottom: 25px;
+}
+
+.faq-item .faq-content span {
+  color: var(--optional-color);
+  display: block;
+  margin-bottom: 15px;
+}
+
+.faq-item .faq-content h3 {
+  font-size: 35px;
+  line-height: 1.4;
+  margin-bottom: 0;
+}
+
+.faq-accordion .accordion-item {
+  border: 1px solid #E5E5E5;
+  margin-bottom: 15px;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+  border-radius: 0 0 5px 5px;
+}
+
+.faq-accordion .accordion-item:last-child {
+  margin-bottom: 0;
+}
+
+.faq-accordion .accordion-item .accordion-button {
+  color: var(--black-color);
+  position: relative;
+  text-align: start;
+  -webkit-box-shadow: unset;
+          box-shadow: unset;
+  margin-bottom: 0;
+  display: block;
+  border: none;
+  width: 100%;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 20px 55px 20px 25px;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+  background-color: transparent;
+}
+
+.faq-accordion .accordion-item .accordion-button::before {
+  position: absolute;
+  right: 25px;
+  top: 22px;
+  content: "\ea78";
+  font-family: 'remixicon';
+  font-size: 20px;
+  color: var(--main-color);
+}
+
+.faq-accordion .accordion-item .accordion-button.collapsed::before {
+  content: "\ea4e";
+  color: var(--black-color);
+}
+
+.faq-accordion .accordion-item .accordion-body {
+  padding: 0 25px 20px;
+  border-bottom: 5px solid var(--main-color);
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+  border-radius: 0 0 5px 5px;
+}
+
+.faq-accordion .accordion-item .accordion-body p {
+  color: var(--paragraph-color);
+  font-size: 15px;
+}
+
+.faq-accordion .accordion-item:hover {
+  border-radius: 5px;
+  border: 1px solid var(--main-color);
+}
+
+.faq-accordion .accordion-item:hover .accordion-body {
+  border-radius: 5px;
+}
+
 /*----------------------------
     FAQ  & Error CSS
 ------------------------------*/
@@ -6472,7 +6569,7 @@ article {
 
 .footer-wrap .footer-widget .footer-widget-title {
   position: relative;
-  font-size: 24px;
+  font-size: 26px;
   font-weight: 700;
   color: #fff;
   padding-bottom: 5px;
