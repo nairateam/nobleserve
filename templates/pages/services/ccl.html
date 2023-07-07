@@ -1,0 +1,184 @@
+
+
+{% extends "base.html" %}  
+{% load static %}
+{% block title %} Corporate and Commercial Loans{% endblock %}
+
+{% block content %}
+<div class="page-wrapper">
+{% include 'partials/preloader.html' %}
+{% include 'partials/header.html' %}
+
+
+
+<div class="breadcrumb-wrap bg-f br-1" style="margin-top:70px">
+    <div class="container">
+    <div class="breadcrumb-title">
+    <h2>Corporate and Commercial Loans   </h2>
+   
+    </div>
+    </div>
+    </div>
+    
+
+<div class="service-details-wrap ptb-100">
+    <div class="container">
+    <div class="row gx-5">
+    <div class="col-xl-8 col-lg-12">
+    <div class="service-desc">
+    <a class="service-img mb-25 d-block" data-fancybox="gallery" href="{% static 'assets/img/services/youngman.jpg' %}">
+    <img src="{% static 'assets/img/services/youngman.jpg' %}" alt="Image">
+    </a>
+    <h2>Corporate and Commercial Loans    </h2>
+    <p>Corporate Organizations and Small-Medium Enterprises can access loans of up to 500M Naira for growth and expansion activities such as import and export financing, contract financing and so on.
+    </p>
+    <h2>Eligibility    </h2>
+     <ul class="content-feature-list style2 list-style">
+    <li><i class="ri-check-line"></i>Corporate organizations </li>
+    <li><i class="ri-check-line"></i>SMEs </li>
+ 
+    </ul>
+   
+    <div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+    <span>
+    <i class="ri-arrow-down-s-line plus"></i>
+    <i class="ri-arrow-up-s-line minus"></i>
+    </span>
+  Requirements </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+    <div class="accordion-body">
+    <div class="single-product-text">
+        <ul class="content-feature-list style2 list-style" style="margin-top:-10px">
+            <li><i class="ri-check-line"></i>Company profile </li>
+            <li><i class="ri-check-line"></i>12 months statement</li>
+            <li><i class="ri-check-line"></i> Audited Account</li>
+            <li><i class="ri-check-line"></i> Certificate of Incorporation            </li>
+            <li><i class="ri-check-line"></i> Memorandom of Association</li>
+            <li><i class="ri-check-line"></i> Valid ID Card          </li>
+            <li><i class="ri-check-line"></i> Utility Bill            </li>
+            <li><i class="ri-check-line"></i> Copy of the invoice            </li>
+            <li><i class="ri-check-line"></i> Copy of LPO/Contract          </li>
+            <li><i class="ri-check-line"></i> CAC Documents            </li>
+         
+            <li><i class="ri-check-line"></i> Application form            </li>
+            <li><i class="ri-check-line"></i> Executed account opening form            </li>
+            </ul>  </div>
+    </div>
+    </div>
+    </div>
+    <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+    <span>
+    <i class="ri-arrow-down-s-line plus"></i>
+    <i class="ri-arrow-up-s-line minus"></i>
+    </span>
+    Procedure
+    </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse " aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+    <div class="accordion-body">
+        <ul class="content-feature-list style2 list-style" style="margin-top:-10px">
+            <li><i class="ri-check-line"></i>Fill and submit the application form</li>
+            <li><i class="ri-check-line"></i>Provide the required checklist for credit review            </li>
+            <li><i class="ri-check-line"></i>Generate offer letter            </li>
+            <li><i class="ri-check-line"></i> Execution of offer letter   </li>
+            <li><i class="ri-check-line"></i> Payment of advance rental fees            </li>
+            <li><i class="ri-check-line"></i> Delivery          </li>
+          
+         
+            </ul> 
+    </div>
+    </div>
+    </div>
+    <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+    <span>
+    <i class="ri-arrow-down-s-line plus"></i>
+    <i class="ri-arrow-up-s-line minus"></i>
+     </span>
+   How to get Started?
+    </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+    <div class="accordion-body">
+    <p>To get started, an application form will be filled and submitted with required supporting documents listed above to complete the onboarding process.</p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+<!--allservicessidebar -->
+    {% include 'partials/allservicessidebar.html' %}
+    <!-- |End allservicessidebar -->
+
+    <div class="sidebar-widget style3">
+    <div class="contact-widget-form">
+    <div class="overlay op-95 bg-rock"></div>
+    <h4>Lets Talk</h4>
+    <form action="#" method="post">
+    <div class="form-group">
+    <input type="text" placeholder="Name">
+    </div>
+    <div class="form-group">
+    <input type="email" placeholder="Email">
+    </div>
+    <div class="form-group">
+    <input type="phone" placeholder="Phone">
+    </div>
+    <div class="form-group">
+    <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Message"></textarea>
+    </div>
+    <button class="btn style1 d-block w-100" type="submit">Send Message</button>
+    </form>
+    </div>
+    </div>
+
+    
+
+    
+    <div class="sidebar-widget style2">
+        <h4>Business Hours </h4>
+        <div class="schedule-widget">
+        <ul class="list-style">
+        <li>
+        <h6>Mon-Thurs</h6>
+        <p>8:00 AM - 5:00 PM</p>
+        </li>
+        <li>
+        <h6>Fri-Sat</h6>
+        <p>8:00 AM - 3:00 PM</p>
+        </li>
+        <li>
+        <h6>Sun</h6>
+        <p>Closed</p>
+        </li>
+        </ul>
+        </div>
+        </div>
+    </div>
+
+
+    
+    </div>
+
+    
+    </div>
+    </div>
+    </div>
+    
+    </div>
+    
+
+
+    {% include 'partials/cta-wrap2.html' %}
+
+    {% include 'partials/footer.html' %}
+    {% endblock content %}

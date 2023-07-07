@@ -157,3 +157,20 @@ def contact(request):
 
 def faq(request):
     return render(request, 'pages/faq.html')
+
+
+#services details page
+def ntsp(request):
+    return render(request, 'pages/services/ntsp.html')
+
+def npn(request):
+    return render(request, 'pages/services/npn.html')
+
+def lf(request):
+    return render(request, 'pages/services/leasefinancing.html')
+
+def ccl(request):
+    return render(request, 'pages/services/ccl.html')
+
+def pl(request):
+    return render(request, 'pages/services/personalloans.html')

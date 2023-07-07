@@ -15,5 +15,12 @@ urlpatterns = [
     path('myAccount/', views.myAccount, name='myAccount'),
     path('staffDashboard/', views.staffDashboard, name='staffDashboard'),
     path('customerDashboard/', views.customerDashboard, name='customerDashboard'),
-   
+
+    # service details
+    path('Nobleserve Target Savings Plan/', views.ntsp, name='ntsp'),
+    path('Nobleserve Promissory Notes/', views.npn, name='npn'),
+    path('Lease Financing/', views.lf, name='lf'),
+    path('Corporate and Commercial Loans/', views.ccl, name='ccl'),
+    path('Personal Loans/', views.pl, name='pl'),
+
 ]

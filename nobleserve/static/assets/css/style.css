@@ -2726,6 +2726,66 @@ input[type="submit"]:hover {
   color: #00A79D;
 }
 
+
+
+
+
+/*-------------------------------
+     Contact Widget CSS
+-------------------------------*/
+.contact-widget-form {
+  background-color: #063873;
+  position: relative;
+  z-index: 1;
+  padding: 25px;
+}
+
+.contact-widget-form h4 {
+  color:#fff;
+}
+
+.contact-widget-form .overlay {
+  z-index: -1;
+}
+
+.contact-widget-form form .form-group {
+  margin-bottom: 25px;
+}
+
+.contact-widget-form form .form-group input, .contact-widget-form form .form-group textarea {
+  width: 100%;
+  border: none;
+  background: #fff;
+  padding: 15px 20px;
+  color: #000;
+}
+
+.contact-widget-form form .form-group input::-webkit-input-placeholder, .contact-widget-form form .form-group textarea::-webkit-input-placeholder {
+  opacity: 0.8;
+}
+
+.contact-widget-form form .form-group input:-ms-input-placeholder, .contact-widget-form form .form-group textarea:-ms-input-placeholder {
+  opacity: 0.8;
+}
+
+.contact-widget-form form .form-group input::-ms-input-placeholder, .contact-widget-form form .form-group textarea::-ms-input-placeholder {
+  opacity: 0.8;
+}
+
+.contact-widget-form form .form-group input::placeholder, .contact-widget-form form .form-group textarea::placeholder {
+  opacity: 0.8;
+}
+
+.contact-widget-form form .form-group input {
+  height: 50px;
+}
+
+.contact-widget-form form .form-group textarea {
+  height: 100px;
+  resize: none;
+}
+
+
 /*---------------------------
         Sidebar CSS
  ---------------------------*/
@@ -5643,7 +5703,7 @@ border-radius: 10px 10px 0px 0px;
   color: #fff;
   line-height: 1.2;
   margin: 0;
-  font-size: 24px;
+  font-size: 19px;
   font-weight: 600;
 }
 
@@ -6457,6 +6517,7 @@ article {
 
 .footer-wrap .footer-widget .footer-menu li {
   margin-bottom: 15px;
+
 }
 
 .footer-wrap .footer-widget .footer-menu li:last-child {
@@ -6999,4 +7060,118 @@ button:hover {
 /* Mark the steps that are finished and valid: */
 .step.finish {
   background-color: #063873;
+}
+
+
+
+.service-desc .accordion {
+  margin-top: 25px;
+}
+article p,
+.service-desc p,
+.terms-wrap p,
+.project-desc p {
+  margin-bottom: 15px;
+}
+
+article p strong,
+.service-desc p strong,
+.terms-wrap p strong,
+.project-desc p strong {
+  color: #000;
+}
+
+article p a,
+.service-desc p a,
+.terms-wrap p a,
+.project-desc p a {
+  color: #030734;
+}
+
+article p a:hover,
+.service-desc p a:hover,
+.terms-wrap p a:hover,
+.project-desc p a:hover {
+  text-decoration: underline;
+  color: #030734;
+}
+
+article h1,
+.service-desc h1,
+.terms-wrap h1,
+.project-desc h1 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+article h2,
+.service-desc h2,
+.terms-wrap h2,
+.project-desc h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+article h3,
+.service-desc h3,
+.terms-wrap h3,
+.project-desc h3 {
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+article h4,
+.service-desc h4,
+.terms-wrap h4,
+.project-desc h4 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+article h5,
+.service-desc h5,
+.terms-wrap h5,
+.project-desc h5 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+article h6,
+.service-desc h6,
+.terms-wrap h6,
+.project-desc h6 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+article ol,
+.service-desc ol,
+.terms-wrap ol,
+.project-desc ol {
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+article ol li,
+.service-desc ol li,
+.terms-wrap ol li,
+.project-desc ol li {
+  margin-bottom: 15px;
+  color: #666666;
+  padding-left: 3px;
+}
+
+article .content-feature-list,
+.service-desc .content-feature-list,
+.terms-wrap .content-feature-list,
+.project-desc .content-feature-list {
+  margin: 25px 0 25px;
+}
+
+.service-desc .service-img {
+  border-radius: 5px;
+}
+
+.service-desc .service-img img {
+  border-radius: 5px;
 }
