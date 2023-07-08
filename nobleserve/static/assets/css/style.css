@@ -3043,6 +3043,7 @@ input[type="submit"]:hover {
   line-height: 1.3;
   margin-bottom: 20px;
   font-family: 'Cabinet Grotesk', sans-serif;
+  color:#063873;
 }
 
 .hero-wrap .hero-content p {
@@ -7272,3 +7273,109 @@ article .content-feature-list,
 .service-desc .service-img img {
   border-radius: 5px;
 }
+
+
+
+.banner-slider-area .owl-dots{
+  position:absolute;
+  margin-top:0!important;
+  margin-bottom:0!important;
+  bottom:50px;left:0;right:0}
+  
+  .banner-slider-area .owl-dots .owl-dot span{
+    background-color:#063873 !important;
+    -webkit-transition:.7s;
+    transition:.7s;
+    margin:0 7px;
+    width:12px!important;
+    height:12px!important;
+    position:relative;z-index:1
+  }
+    .banner-slider-area .owl-dots .owl-dot span::before{
+      content:'';
+      position:absolute;
+      z-index:-1;
+      left:50%;
+      top:50%;
+      -webkit-transform:translateX(-50%) translateY(-50%);
+      transform:translateX(-50%) translateY(-50%);
+      width:20px;height:20px
+      ;background-color:transparent;
+      border:1px solid #7517cd;
+      border-radius:50%;opacity:0;
+      -webkit-transition:.7s;transition:.7s}
+      .banner-slider-area .owl-dots .owl-dot.active span{
+        width:10px!important;
+        height:10px!important}
+        
+        .banner-slider-area .owl-dots .owl-dot.active span::before{
+          opacity:1
+        }
+          
+          .banner-slider-area 
+          .owl-dots .owl-dot:hover span{
+            width:10px!important;
+            height:10px!important}
+            
+            .banner-slider-area .owl-dots .owl-dot:hover span::before{
+              opacity:1}
+              
+              .banner-slider-item{
+                padding:100px 0}
+                
+                .banner-slider-content{
+                  max-width:710px;
+                  margin-left:auto}
+                  
+                  .banner-slider-content span{
+                    color:#ff9083}
+                    
+                    .banner-slider-content h1{
+                      font-size:44px;
+                      font-family: 'Cabinet Grotesk', sans-serif;
+                      color:#063873;
+                      line-height:1.2;
+                      margin-bottom:20px;
+                      margin-top:10px}
+                      
+                      .banner-slider-content p{
+                        margin-bottom:30px;
+                        max-width:550px}
+                        
+                        .banner-slider{
+                          position:relative}
+                          
+                          
+                          .banner-area-two{
+                            position:relative;z-index:1}
+                            
+  .banner-area-two .shape-circle{
+    position:absolute;
+     z-index:-1;
+        left:0;
+    top:15%
+        }
+                              
+  .banner-area-two .shape-circle img{
+    max-width:100px
+  }
+
+  .banner-content-two{
+    max-width:710px;
+    margin-left:auto}
+    
+.banner-content-two span{
+  color:#063873;
+}
+  
+  .banner-content-two h1{
+    font-size:58px;
+    color:#063873;
+    line-height:1.2;
+    margin-bottom:30px;margin-top:10px}
+    
+    .banner-content-two p{
+      margin-bottom:30px;
+      max-width:550px
+    }
+    

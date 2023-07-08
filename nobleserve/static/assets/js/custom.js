@@ -1,105 +1,7 @@
 (function ($) {
   "use strict";
 
-  var $window = $(window);
-  var didScroll,
-    lastScrollTop = 0,
-    delta = 5,
-    $mainNav = $("#sticky"),
-    $mainNavHeight = $mainNav.outerHeight(),
-    scrollTop;
-
-  $window.on("scroll", function () {
-    didScroll = true;
-    scrollTop = $(this).scrollTop();
-  });
-
-  setInterval(function () {
-    if (didScroll) {
-      hasScrolled();
-      didScroll = false;
-    }
-  }, 200);
-
-  function hasScrolled() {
-    if (Math.abs(lastScrollTop - scrollTop) <= delta) {
-      return;
-    }
-    if (scrollTop > lastScrollTop && scrollTop > $mainNavHeight) {
-      $mainNav.css("top", -$mainNavHeight);
-    } else {
-      if (scrollTop + $(window).height() < $(document).height()) {
-        $mainNav.css("top", 0);
-      }
-    }
-    lastScrollTop = scrollTop;
-  }
-
-  //sticky header
-  function navbarFixed() {
-    if ($("#sticky").length) {
-      $(window).scroll(function () {
-        var scroll = $(window).scrollTop();
-        if (scroll) {
-          $("#sticky").addClass("navbar_fixed");
-        } else {
-          $("#sticky").removeClass("navbar_fixed");
-        }
-      });
-    }
-  }
-  navbarFixed();
-
-  $(".navbar-nav > li .mobile_dropdown_icon").on("click", function (e) {
-    $(this).parent().find("ul").first().toggle(300);
-    $(this).parent().siblings().find("ul").hide(300);
-  });
-
-  if ($(".submenu").length) {
-    $(".submenu > .dropdown-toggle").on("click", function () {
-      var location = $(this).attr("href");
-      window.location.href = location;
-      return false;
-    });
-  }
-
-  //initialize smmothscroll
-  if ($("header").length) {
-    $("header").smoothScroll();
-  }
-
-  if ($("#banner_animation").length > 0) {
-    $("#banner_animation").parallax({
-      scalarX: 10.0,
-      scalarY: 7.0,
-    });
-  }
-  if ($("#banner_animation2").length > 0) {
-    $("#banner_animation2").parallax({
-      scalarX: 10.0,
-      scalarY: 0.0,
-    });
-  }
-  if ($("#card_area_animation").length > 0) {
-    $("#card_area_animation").parallax({
-      scalarX: 10.0,
-      scalarY: 0.0,
-    });
-  }
-  if ($("#MouseMoveAnimation").length > 0) {
-    $("#MouseMoveAnimation").parallax({
-      scalarX: 5.0,
-      scalarY: 10.0,
-    });
-  }
-
-  if ($("#readOnlyClose").length) {
-    $("#readOnlyClose").on("click", function () {
-      $("#locationSelect").val("");
-      $("#locationSelect").focus();
-    });
-  }
-
+ 
   // === Back to Top Button
   var back_top_btn = $("#back-to-top");
 
@@ -225,111 +127,6 @@
     });
   }
 
-  if ($(".testimonial-slider-3").length) {
-    $(".testimonial-slider-3").slick({
-      dots: false,
-      asNavFor: ".testimonial-slider-2",
-      arrows: false,
-      slidesToShow: 1,
-      centerMode: false,
-      autoplay: false,
-      infinite: true,
-      slidesToScroll: 1,
-      fade: true,
-    });
-  }
-  if ($(".feature-slider").length) {
-    $(".feature-slider").slick({
-      dots: true,
-      arrows: false,
-      slidesToShow: 3,
-      autoplay: true,
-      infinite: true,
-      autoplaySpeed: 5000,
-      slidesToScroll: 3,
-      responsive: [
-        {
-          breakpoint: 992,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-          },
-        },
-      ],
-    });
-  }
-  if ($(".statistics-slider").length) {
-    $(".statistics-slider").slick({
-      dots: true,
-      arrows: false,
-      slidesToShow: 1,
-      autoplay: true,
-      infinite: true,
-      autoplaySpeed: 3000,
-      slidesToScroll: 1,
-    });
-  }
-  if ($(".client-slider").length) {
-    $(".client-slider").slick({
-      dots: true,
-      arrows: false,
-      centerMode: false,
-      slidesToShow: 3,
-      autoplay: true,
-      infinite: true,
-      autoplaySpeed: 5000,
-      slidesToScroll: 3,
-      responsive: [
-        {
-          breakpoint: 1200,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2,
-          },
-        },
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-          },
-        },
-      ],
-    });
-  }
-  /* new version */
-  if ($(".client-slider-2").length) {
-    $(".client-slider-2").slick({
-      dots: true,
-      arrows: true,
-      prevArrow:
-        '<button type="button" class="slick-prev"><i class="arrow_left"></i></button>',
-      nextArrow:
-        '<button type="button" class="slick-next"><i class="arrow_right"></i></button>',
-      centerMode: false,
-      slidesToShow: 3,
-      autoplay: true,
-      infinite: true,
-      autoplaySpeed: 5000,
-      slidesToScroll: 3,
-      responsive: [
-        {
-          breakpoint: 1200,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2,
-          },
-        },
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-          },
-        },
-      ],
-    });
-  }
   if ($(".loan-slider").length) {
     $(".loan-slider").slick({
       dots: true,
@@ -465,7 +262,6 @@
   }
 
   //   Activate Range Sliders
-
   if (mySlider && mySliderMonth && mySliderYear) {
     noUiSlider.create(mySlider, {
       start: [15000],
@@ -857,4 +653,64 @@
     });
   }
   // End of Calculator
+
+      // Banner Slider
+      $('.banner-slider').owlCarousel({
+        loop: true,
+        margin: 30,
+        items: 1,
+        nav: false,
+        dots: true,
+        autoplay: true,
+        autoplayHoverPause: true,
+    })
+
+    // Brand Slider
+    $('.brand-slider').owlCarousel({
+        loop: true,
+        margin: 30,
+        nav: false,
+        dots: false,
+        autoplay: true,
+        autoplayHoverPause: true,
+        responsive:{
+            0:{
+                items: 2
+            },
+            600:{
+                items: 3
+            },
+            1000:{
+                items: 4
+            },
+            1200:{
+                items: 5
+            },
+        }
+    })
+
+    // Brand Slider Two
+    $('.brand-slider-two').owlCarousel({
+        loop: true,
+        margin: 30,
+        nav: false,
+        dots: false,
+        autoplay: true,
+        autoplayHoverPause: true,
+        responsive:{
+            0:{
+                items: 2
+            },
+            600:{
+                items: 3
+            },
+            1200:{
+                items: 5
+            },
+        }
+    })
+
+  
+
+  
 })(jQuery);

@@ -5,41 +5,40 @@
         <title>Nobleserve | {% block title %}    {% endblock %}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="utf-8">
-        <link rel="icon" type="image/png" href="{% static 'assets/img/favicon.png' %}">
+<link rel="icon" type="image/png" href="{% static 'assets/img/favicon.png' %}">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+      <!-- External CSS libraries -->
+      <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+      <link rel="stylesheet" href="{% static 'assets/css/flaticon.css' %}">
+      <link rel="stylesheet" href="{% static 'assets/css/remixicon.css' %}">
+      <link rel="stylesheet" href="{% static 'assets/css/owl.carousel.min.css' %}">
       
-
-        <!-- External CSS libraries -->
-    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
-    <link rel="stylesheet" href="{% static 'assets/css/flaticon.css' %}">
-    <link rel="stylesheet" href="{% static 'assets/css/remixicon.css' %}">
-    <link rel="stylesheet" href="{% static 'assets/css/owl.carousel.min.css' %}">
-    <link rel="stylesheet" href="{% static 'assets/css/odometer.min.css' %}">
-    <link rel="stylesheet" href="{% static 'assets/css/fancybox.css' %}">
-    <link rel="stylesheet" href="{% static 'assets/css/aos.css' %}">
-    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
-    <link rel="stylesheet" href="{% static 'assets/css/responsive.css' %}">
-    <link rel="stylesheet" href="{% static 'assets/css/dark-theme.css' %}">
-
-     <!-- CSS here -->
-   
-     <link rel="stylesheet" type="text/css" href="{% static 'assets/css/elegant-icons.min.css' %}" media="all" />
-     <link rel="stylesheet" type="text/css" href="{% static 'assets/css/all.min.css' %} " media="all" />
-     <link rel="stylesheet" type="text/css" href="{% static 'assets/css/animate.css' %} " media="all" />
-     <link rel="stylesheet" type="text/css" href="{% static 'assets/css/slick.css' %}" media="all" />
-     <link rel="stylesheet" type="text/css" href="{% static 'assets/css/slick-theme.css' %}" media="all" />
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.css" integrity="sha512-uHuCigcmv3ByTqBQQEwngXWk7E/NaPYP+CFglpkXPnRQbSubJmEENgh+itRDYbWV0fUZmUz7fD/+JDdeQFD5+A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet" href="{% static 'assets/css/owl.theme.default.min.css' %}">
+      <link rel="stylesheet" href="{% static 'assets/css/odometer.min.css' %}">
+      <link rel="stylesheet" href="{% static 'assets/css/fancybox.css' %}">
+      <link rel="stylesheet" href="{% static 'assets/css/aos.css' %}">
+      <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+      <link rel="stylesheet" href="{% static 'assets/css/responsive.css' %}">
+      <link rel="stylesheet" href="{% static 'assets/css/dark-theme.css' %}">
   
-     <link rel="stylesheet" type="text/css" href="{% static 'assets/css/nouislider.min.css' %}" media="all" />
-     <link rel="stylesheet" type="text/css" href="{% static 'assets/css/animate.css' %} " media="all" />
-     <link rel="stylesheet" type="text/css" href="{% static 'assets/css/jquery.fancybox.min.css' %} " media="all" />
-     <link rel="stylesheet" type="text/css" href="{% static 'assets/css/flatpickr.min.css' %} " media="all" />
-     <link rel="stylesheet" href="{% static 'assets/css/style2.css' %}">
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-</head>
+       <!-- CSS here -->
+       <link rel="stylesheet" type="text/css" href="{% static 'assets/css/elegant-icons.min.css' %}" media="all" />
+       <link rel="stylesheet" type="text/css" href="{% static 'assets/css/all.min.css' %} " media="all" />
+       <link rel="stylesheet" type="text/css" href="{% static 'assets/css/animate.css' %} " media="all" />
+       <link rel="stylesheet" type="text/css" href="{% static 'assets/css/slick.css' %}" media="all" />
+       <link rel="stylesheet" type="text/css" href="{% static 'assets/css/slick-theme.css' %}" media="all" />
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.css" integrity="sha512-uHuCigcmv3ByTqBQQEwngXWk7E/NaPYP+CFglpkXPnRQbSubJmEENgh+itRDYbWV0fUZmUz7fD/+JDdeQFD5+A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+       <link rel="stylesheet" type="text/css" href="{% static 'assets/css/nouislider.min.css' %}" media="all" />
+       <link rel="stylesheet" type="text/css" href="{% static 'assets/css/animate.css' %} " media="all" />
+       <link rel="stylesheet" type="text/css" href="{% static 'assets/css/jquery.fancybox.min.css' %} " media="all" />
+       <link rel="stylesheet" type="text/css" href="{% static 'assets/css/flatpickr.min.css' %} " media="all" />
+       <link rel="stylesheet" href="{% static 'assets/css/style2.css' %}">
+
+    </head>
     <body>   
        
     {% block content %}
- 
  
 {% endblock %}
     <!-- Back to top button -->
@@ -49,48 +48,35 @@
         <img  src="{% static 'assets/img/whatsapp-logo.png' %}" width="70px" alt="Whatsapp">
       </a> 
   
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  
-    <script src="{% static 'assets/js/bootstrap.bundle.min.js' %}"></script>
-    
-    
-     <script type="text/javascript" src="{% static 'assets/js/jquery.smoothscroll.min.js' %}"></script>
-    <script type="text/javascript" src="{% static 'assets/js/slick.min.js' %}"></script>
-    <script type="text/javascript" src="{% static 'assets/js/jquery.fancybox.min.js' %}"></script>
-    <script type="text/javascript" src="{% static 'assets/js/nouislider.min.js' %}"></script>
-    <script type="text/javascript" src="{% static 'assets/js/wNumb.js' %}"></script>
-    <script type="text/javascript" src="{% static 'assets/js/flatpickr.min.js' %}"></script>
-    <script type="text/javascript" src="{% static 'assets/js/wow.min.js' %}"></script>
-   
-    <script src="{% static 'assets/js/multi-stepregform.js' %}"></script> 
-   
-    <script src="{% static 'assets/js/countries.js' %}"></script>  
+<script src="{% static 'assets/js/jquery.min.js' %}"></script> 
+<script src="{% static 'assets/js/multi-stepregform.js' %}"></script> 
+<script src="{% static 'assets/js/countries.js' %}"></script>  
+<script language="javascript">
 
-    
-
-    <script language="javascript">
-
-        setTimeout(function() {
-            $('#message').fadeOut('slow');
-          }, 3000);
-
-          
-        populateCountries("country2");
-     populateCountries("country2");
-
- </script>
+   setTimeout(function() {
+       $('#message').fadeOut('slow');
+     }, 3000);
  
-    <script type="text/javascript" src="{% static 'assets/js/custom.js' %}"></script>
+   populateCountries("country2");
+populateCountries("country2");
+</script>  
 
-    <script src="{% static 'assets/js/aos.js' %}"></script>
-    <script src="{% static 'assets/js/owl.carousel.min.js' %}"></script>
-    <script src="{% static 'assets/js/odometer.min.js' %}"></script>
-    <script src="{% static 'assets/js/jquery.countdown.min.js' %}"></script>
-    <script src="{% static 'assets/js/fancybox.js' %}"></script>
-    <script src="{% static 'assets/js/jquery.appear.js' %}"></script>
-    <script src="{% static 'assets/js/tweenmax.min.js' %}"></script>
-    <script src="{% static 'assets/js/main.js' %}"></script>   
-  
+<script src="{% static 'assets/js/owl.carousel.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'assets/js/jquery.smoothscroll.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'assets/js/slick.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'assets/js/jquery.fancybox.min.js' %}"></script>
+<script src="{% static 'assets/js/fancybox.js' %}"></script>
+<script src="{% static 'assets/js/jquery.appear.js' %}"></script>
+<script type="text/javascript" src="{% static 'assets/js/nouislider.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'assets/js/wNumb.js' %}"></script>
+<script type="text/javascript" src="{% static 'assets/js/flatpickr.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'assets/js/wow.min.js' %}"></script>
+<script src="{% static 'assets/js/tweenmax.min.js' %}"></script>
+<script src="{% static 'assets/js/odometer.min.js' %}"></script>
+<script src="{% static 'assets/js/jquery.countdown.min.js' %}"></script>
+<script src="{% static 'assets/js/aos.js' %}"></script>
+<script src="{% static 'assets/js/main.js' %}"></script> 
+<script type="text/javascript" src="{% static 'assets/js/custom.js' %}"></script>
     
 </body>
     
