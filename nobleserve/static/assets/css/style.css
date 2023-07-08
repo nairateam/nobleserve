@@ -5487,7 +5487,6 @@ FAQ Area CSS
 
 .faq-accordion .accordion-item:hover {
   border-radius: 5px;
-  border: 1px solid var(--main-color);
 }
 
 .faq-accordion .accordion-item:hover .accordion-body {
@@ -7370,7 +7369,7 @@ article .content-feature-list,
   
   .banner-content-two h1{
     font-size:58px;
-    color:#063873;
+     color:#063873;
     line-height:1.2;
     margin-bottom:30px;margin-top:10px}
     

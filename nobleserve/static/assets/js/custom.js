@@ -654,8 +654,10 @@
   }
   // End of Calculator
 
+
+
       // Banner Slider
-      $('.banner-slider').owlCarousel({
+    $('.banner-slider').owlCarousel({
         loop: true,
         margin: 30,
         items: 1,
