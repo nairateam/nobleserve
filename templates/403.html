@@ -1,35 +1,28 @@
 {% extends "base.html" %}  
 {% load static %}
-{% block title %} Staff Dashboard {% endblock %}
+{% block title %} 403 {% endblock %}
 {% block content %}
-
-
-  <!-- begin app -->
-  <div class="app">
-    <!-- begin app-wrap -->
-    <div class="app-wrap">
 
         <!-- begin pre-loader -->
         {% include 'partials/preloader.html' %}
-        <!-- end pre-loader -->
-  <!--start error-404-contant-->
-  <div class="error-contant">
-    <div class="error-innr">
-        <div class="container">
-            <div class="row justify-content-center align-items-center">
-                <div class="col-md-8 text-center">
-                    <div class="error-text">
-                        <img class="img-fluid" src="{% static 'assets/img/logo.jpg' %}" style="width:100px" alt="Logo">
-                        <h3 class="m-t-30">You are not authorized to view this page!!</h3>
-                        <a href="{% url 'login' %}" class="btn btn-round btn-primary mt-3">Back to Home</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!--end error-404-contant-->      
 
+
+            <div class="error-wrap ptb-100">
+            <div class="container">
+            <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+            <div class="error-content">
+            <img src="{% static 'assets/img/404.jpg' %}" alt="Iamge">
+            <h2>Oops! You are not Authorised to View this Page</h2>
+   
+            <a href="{% url 'home' %}" class="btn style1">Back To Home<i class="ri-arrow-right-s-line"></i></a>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            
+      
 <!-- end app -->
     {% endblock content %}
 

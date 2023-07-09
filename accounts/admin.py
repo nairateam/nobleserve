@@ -14,9 +14,13 @@ class CustomUserAdmin(UserAdmin):
 
 
 class CustomerUserAdminProfile(admin.ModelAdmin):
+    #to avoid the error of the image field i.e The 'photo' attribute has no file associated with it. we passed it into a try/catch 
     def thumbnail(self, object):
-        return format_html('<img src="{}" width="40" style="border-radius: 50px;" />'.format(object.photo.url))
-   
+        try:
+            return format_html('<img src="{}" width="40" style="border-radius: 50px;" />'.format(object.photo.url))
+        except:
+            pass #just ingnore
+    
     thumbnail.short_description = 'Customer Photo'
     list_display = ('id', 'thumbnail','user','phone_number', 'country','created_at')
     list_display_links = ('id','user',)

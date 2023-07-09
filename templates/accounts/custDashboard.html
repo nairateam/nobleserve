@@ -1,0 +1,359 @@
+
+{% extends "base2.html" %}  
+{% load static %}
+{% block title %} Customer Dashboard {% endblock %}
+
+{% block content %}
+
+{% include 'partials/dashboard/header.html' %}
+{% include 'partials/dashboard/sidebar.html' %}
+
+ <!-- BEGIN: Content-->
+ <div class="app-content content">
+    <div class="content-overlay"></div>
+    <div class="content-wrapper">
+      <div class="content-header row">
+      </div>
+      <div class="content-body"><!-- eCommerce statistic -->
+<div class="row">
+  <div class="col-xl-3 col-lg-6 col-12">
+      <div class="card pull-up">
+          <div class="card-content">
+              <div class="card-body">
+                  <div class="media d-flex">
+                      <div class="media-body text-left">
+                        <div class=" text-center">
+                            <svg width="99" height="64" viewBox="0 0 99 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_917_67922)">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.96257 26.9648L5.58121 28.0838L8.96257 38.2279V26.9648Z" fill="#A0A0AB"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M18.0984 19.575L76.885 0L83.4018 19.575H80.918L75.6554 3.75024L75.348 2.85264L74.3643 3.17233L25.1194 19.575H18.0984Z" fill="#A0A0AB"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M73.9831 5.31201L31.1443 19.5752H40.8458C43.6419 18.6608 46.6567 18.6608 49.4529 19.5752H78.7785L73.9831 5.31201ZM64.9088 11.5583L70.8846 9.56638L72.4707 14.3372C69.1631 15.37 65.8064 14.1527 64.9088 11.5583Z" fill="#A0A0AB"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.96258 52.2331L0.0849609 25.5756L8.96258 22.6123V24.9608L3.99505 26.6085L3.01138 26.9405L3.31877 27.838L8.96258 44.8063V52.2331Z" fill="#A0A0AB"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M73.5651 64.0001H11.5939V21.9482H92.5253V41.5479H90.1768V25.1206V24.1738H89.144H14.9753H13.9424V25.1206V60.8278V61.7746H14.9753H73.5651V64.0001Z" fill="#A0A0AB"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.0696 26.0674V59.881H73.5651V41.5479H88.0988V26.0674H16.0696ZM20.3608 56.8071V51.7903C23.8283 51.8518 26.6194 54.0651 26.6563 56.8071H20.3608ZM20.3608 34.1335V29.2151H26.7301C26.5948 31.8956 23.7791 34.0966 20.2994 34.1335H20.3608ZM52.0596 56.8071C49.3211 56.807 46.6442 55.9942 44.3681 54.4715C42.092 52.9488 40.3191 50.7847 39.2739 48.2535C38.2288 45.7223 37.9585 42.9378 38.4972 40.2529C39.0359 37.5679 40.3595 35.1032 42.3002 33.1711C44.2409 31.239 46.7115 29.9265 49.3988 29.3997C52.0862 28.8729 54.8694 29.1556 57.3959 30.212C59.9225 31.2685 62.0786 33.051 63.5911 35.3339C65.1037 37.6168 65.9046 40.2972 65.8924 43.0357C65.873 46.6927 64.4074 50.1935 61.8157 52.7737C59.224 55.3539 55.7167 56.8039 52.0596 56.8071ZM83.8198 34.1581C80.3401 34.0966 77.5489 31.8833 77.5489 29.1414H83.8198V34.1581Z" fill="#A0A0AB"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M96.7428 64.0002H77.7211C75.4832 64.0002 75.4832 60.0901 77.7211 60.0901H96.7428C98.9683 60.0901 98.9683 64.0002 96.7428 64.0002ZM96.7428 58.6023H77.7211C75.4832 58.6023 75.4832 54.6923 77.7211 54.6923H96.7428C98.9683 54.6923 98.9683 58.6023 96.7428 58.6023ZM96.7428 53.1922H77.7211C75.4832 53.1922 75.4832 49.2944 77.7211 49.2944H96.7428C98.9683 49.2944 98.9683 53.1922 96.7428 53.1922ZM96.7428 47.7943H77.7211C75.4832 47.7943 75.4832 43.8965 77.7211 43.8965H96.7428C98.9683 43.8965 98.9683 47.7943 96.7428 47.7943Z" fill="#D7D3D0"/>
+                                <path d="M59.1051 42.4454V41.056H58.0969V35.8794H54.6909V41.056H52.5268L48.9856 35.8794H46.0469V41.056H44.9895V42.4454H46.0469V44.0561H44.9895V45.4948H46.0469V50.1303H49.4652V45.4948H52.0104L55.2073 50.1303H58.1092V45.4948H59.1051V44.0561H58.0969V42.4454H59.1051ZM49.4529 44.0561V42.4454H49.9324L51.0513 44.0561H49.4529ZM54.6786 44.0561H54.5557L53.4613 42.4454H54.6909L54.6786 44.0561Z" fill="#A0A0AB"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_917_67922">
+                                <rect width="98.3301" height="64" fill="white" transform="translate(0.0849609)"/>
+                                </clipPath>
+                                </defs>
+                                </svg>
+                          
+                                
+                            <h5 style="margin-top: 10px; font-weight:bold">The Nobleserve Target Savings Plan</h5>
+                        </div>
+                       
+                      </div>
+                     
+                  </div>
+                 
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="col-xl-3 col-lg-6 col-12">
+      <div class="card pull-up">
+          <div class="card-content">
+              <div class="card-body">
+                  <div class="media d-flex">
+                      <div class="media-body text-left">
+                        <div class="text-center">
+                            <svg width="95" height="64" viewBox="0 0 95 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_917_67947)">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M55.6852 9.24989C61.567 8.67985 66.3476 8.84827 71.2318 11.9446C73.1492 13.1495 71.5686 15.1576 69.9362 14.1471C67.1481 12.3808 63.9087 11.4585 60.6083 11.4912C62.6223 12.5412 64.3686 14.0393 65.7127 15.8701C66.7621 17.5414 64.2747 18.7074 63.1217 16.8418C61.8261 14.5228 57.6544 12.424 55.6723 12.2296C54.8431 11.6596 54.0528 11.1543 53.1848 10.6879C54.0617 10.2884 54.8989 9.80691 55.6852 9.24989Z" fill="#A0A0AB"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M42.0431 35.8218L43.3387 37.7003H41.4731V35.8218H42.0431Z" fill="#A0A0AB"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M46.1759 35.8218H47.601V37.7003H47.4585L46.1759 35.8218Z" fill="#A0A0AB"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M66.2568 27.5043C62.2536 19.3423 56.2293 12.6832 50.9305 10.6622C55.5556 9.36661 57.6544 6.77552 58.056 1.95608C53.2107 4.8322 50.8269 5.01357 46.137 1.8913C41.9006 -1.02367 34.3864 -0.920031 36.6018 4.92288C37.5679 7.07603 39.1272 8.90948 41.0973 10.2087C34.5493 13.3872 29.1457 18.5148 25.6285 24.8873C26.2115 25.3666 26.4317 26.1828 25.9653 27.3877C25.3672 28.7188 24.4064 29.8547 23.1929 30.6654C32.2617 32.8678 40.618 53.4541 32.0285 61.4346C36.3622 63.1711 40.9957 64.0362 45.664 63.9806C50.3323 63.9251 54.9438 62.9498 59.235 61.1107C50.1661 54.931 56.6439 33.2694 66.2568 27.5043ZM52.7572 35.8217H51.5653V37.7002H52.7572V39.3196H51.5653V44.748H48.1969L44.4657 39.3196H41.473V44.748H37.4568V39.3196H36.239V37.7002H37.4568V35.8217H36.239V34.1893H37.4568V28.1261H40.903L45.0617 34.1893H47.6528V28.1261H51.656V34.1893H52.7572V35.8217Z" fill="#A0A0AB"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11.1314 30.0694C7.50382 29.7196 4.53702 29.7974 1.47953 31.7407C0.28763 32.4921 1.27225 33.684 2.23095 33.101C3.96246 32.0074 5.97431 31.4403 8.02204 31.4686C6.78676 32.1188 5.71826 33.0455 4.89978 34.1763C4.252 35.2127 5.7937 35.9253 6.4933 34.7723C7.63797 33.2861 9.28839 32.2719 11.1314 31.9221C11.6366 31.5982 12.1419 31.2484 12.6601 30.9634C12.1128 30.7191 11.5919 30.4196 11.1054 30.0694H11.1314Z" fill="#D1D1D6"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.197 48.2979L16.8966 49.2954H15.899V48.2979H16.197Z" fill="#D1D1D6"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M18.4124 48.2979H19.1767V49.2954H19.1119L18.4124 48.2979Z" fill="#D1D1D6"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M20.1872 30.6653C21.4036 29.8579 22.3652 28.721 22.9597 27.3876C24.333 23.773 19.669 23.7082 17.052 25.4702C14.137 27.4135 12.6601 27.2969 9.65446 25.4702C9.63309 26.7477 10.0652 27.9914 10.874 28.9805C11.6828 29.9695 12.816 30.6399 14.0723 30.8726C8.02207 33.3082 0.404253 45.3439 2.06255 55.0864C4.18725 67.4329 32.2877 66.7463 33.1557 54.4904C33.7387 46.5617 30.1241 35.4329 20.1872 30.6653ZM21.9621 48.2977H21.3273V49.2953H21.9621V50.1763H21.3273V53.1171H19.5006L17.4925 50.2151H15.899V53.1171H13.7484V50.1763H13.0877V49.2953H13.7484V48.2977H13.0877V47.4167H13.7484V44.1649H15.601L17.7775 47.4167H19.1379V44.1649H21.2885V47.4167H21.9233L21.9621 48.2977Z" fill="#D1D1D6"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M82.8399 24.9907C87.0245 24.5761 90.4318 24.6927 93.9427 26.9081C95.2382 27.7632 94.1759 29.1883 93.0488 28.4757C91.0715 27.2286 88.7791 26.5724 86.4415 26.5842C87.8593 27.3388 89.0866 28.4066 90.0301 29.7065C90.7815 30.8854 89.0067 31.7275 88.2034 30.3931C86.8815 28.6859 84.9848 27.5166 82.8658 27.1024C82.2828 26.7397 81.6998 26.338 81.1038 26.0142C81.7264 25.7217 82.3242 25.3794 82.8917 24.9907H82.8399Z" fill="#D1D1D6"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M73.7451 46.9634L74.6261 48.246H73.3564V46.9634H73.7451Z" fill="#D1D1D6"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M76.5565 46.9634H77.5281V48.246H77.4245L76.5565 46.9634Z" fill="#D1D1D6"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M79.4455 25.9108C80.8882 25.6419 82.1892 24.8715 83.1186 23.7358C84.048 22.6002 84.5459 21.1724 84.5241 19.7051C81.0779 21.7521 79.3419 21.8816 76.0253 19.7051C73.0067 17.684 67.6561 17.7488 69.2237 21.9205C69.9172 23.4479 71.0261 24.7498 72.4237 25.6776C60.9969 31.1707 56.8771 43.9577 57.5119 53.0784C58.5225 67.1091 90.8334 67.9512 93.269 53.765C95.1864 42.5715 86.4415 28.6962 79.4455 25.9108ZM81.052 46.9245H80.2488V48.2201H81.052V49.3213H80.2488V53.0136H77.9297L75.3386 49.3213H73.3565V53.0136H70.6229V49.3472H69.7937V48.246H70.6229V46.9504H69.7937V45.8622H70.6229V41.7294H72.9678L75.7921 45.8622H77.5281V41.7294H80.2488V45.8622H81.052V46.9245Z" fill="#D1D1D6"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_917_67947">
+                                <rect width="93.6291" height="64" fill="white" transform="translate(0.935425)"/>
+                                </clipPath>
+                                </defs>
+                                </svg>
+                                
+                            <h5 style="margin-top: 10px; font-weight:bold">Lease Financing<br/><br/></h5>
+                        </div>
+                        
+                      </div>
+                    
+                  </div>
+              
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="col-xl-3 col-lg-6 col-12">
+      <div class="card pull-up">
+          <div class="card-content">
+              <div class="card-body">
+                  <div class="media d-flex">
+                      <div class="media-body text-left">
+                        <div class="text-center">
+                                 
+                            <svg width="70" height="64" viewBox="0 0 70 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_917_67940)">
+                                <path d="M47.8704 12.039C46.1935 -4.01301 23.2834 -4.01301 21.595 12.039H26.9726C27.2968 10.2119 28.2538 8.55729 29.6759 7.36526C31.098 6.17323 32.8944 5.51993 34.75 5.51993C36.6056 5.51993 38.402 6.17323 39.8241 7.36526C41.2462 8.55729 42.2033 10.2119 42.5274 12.039H47.8704Z" fill="#A0A0AB"/>
+                                <path d="M62.3495 13.1147H7.13884C5.36788 13.1208 3.67119 13.8271 2.41892 15.0793C1.16666 16.3316 0.460442 18.0283 0.454346 19.7992L0.454346 57.3157C0.460442 59.0867 1.16666 60.7833 2.41892 62.0356C3.67119 63.2879 5.36788 63.9941 7.13884 64.0002H62.3495C64.1225 63.9971 65.8222 63.2923 67.0769 62.0397C68.3317 60.7871 69.0395 59.0886 69.0456 57.3157V19.7992C69.0395 18.0263 68.3317 16.3279 67.0769 15.0753C65.8222 13.8227 64.1225 13.1178 62.3495 13.1147ZM46.0778 37.7132H44.4009V40.2922H46.0315V42.5126H44.4009V49.9257H39.7749L34.6632 42.5126H30.5808V49.9257H25.0991V42.5126H23.4222V40.2922H25.0991V37.7132H23.4222V35.4928H25.0991V27.1892H29.8176L35.4959 35.4928H38.9654V27.1892H44.4009V35.4928H46.0315L46.0778 37.7132Z" fill="#A0A0AB"/>
+                                <path d="M38.7803 40.2919H38.9654V37.7129H37.0225L38.7803 40.2919Z" fill="#A0A0AB"/>
+                                <path d="M30.5808 37.7129V40.2919H33.1482L31.3672 37.7129H30.5808Z" fill="#A0A0AB"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_917_67940">
+                                <rect width="68.5913" height="64" fill="white" transform="translate(0.454346)"/>
+                                </clipPath>
+                                </defs>
+                                </svg>
+                            <h5 style="margin-top: 10px; font-weight:bold">Corporate and Commercial Loans</h5>
+                        </div>
+                         
+                      </div>
+                     
+                  </div>
+                 
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="col-xl-3 col-lg-6 col-12">
+      <div class="card pull-up">
+          <div class="card-content">
+              <div class="card-body">
+                  <div class="media d-flex">
+                      <div class="media-body text-left">
+                        <div class="text-center">
+                            <svg width="77" height="64" viewBox="0 0 77 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M34.0298 37.2238L33.1467 36.1299H28.2189L27.3057 37.2238C27.7272 38.2274 28.3093 39.512 28.7308 40.626C28.781 40.7866 28.8311 40.9572 28.8813 41.1078H32.4241L32.5746 40.626C33.0563 39.512 33.5983 38.2475 34.0298 37.2238Z" fill="#A0A0AB"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M39.2887 23.7954C41.4063 22.3903 41.7375 20.6942 41.3762 17.9644C40.4629 17.5028 40.3726 17.5028 39.7604 17.8942C40.5829 14.1955 40.7595 10.3825 40.2823 6.62366C39.3489 1.49523 34.923 -0.130611 30.1258 -0.00014233C25.3286 0.130327 21.284 0.622094 20.2804 5.88099C19.5667 9.85893 19.7277 13.9446 20.7521 17.854C20.2202 17.5028 20.0697 17.5228 19.1865 17.9644C18.8453 20.644 19.1865 22.3301 21.1937 23.7151C23.9536 37.1835 37.422 37.7656 39.359 23.7954H39.2887Z" fill="#A0A0AB"/>
+                                <path d="M76.2917 48.0222V45.1619H74.154V34.2427H66.9882V45.1619H62.4319L55.0152 34.2427H48.843V45.1619H46.6451V48.0724H48.843V51.3843H46.6451V54.2947H48.843V63.9996H56.0188V54.2947H61.368L68.0621 63.9996H74.154V54.2947H76.2917V51.3843H74.154V48.0222H76.2917ZM56.0188 51.3843V48.0222H57.0224L59.4211 51.3843H56.0188ZM66.9882 51.3843H66.7373L64.4391 48.0222H66.9882V51.3843Z" fill="#D7D3D0"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M44.6379 43.1549V56.3021H46.8358V59.0922C45.2401 59.4836 43.6544 59.8248 42.0687 60.0958C38.3081 60.7607 34.4967 61.0965 30.6778 61.0994H30.186C26.5314 61.0667 22.8859 60.731 19.2868 60.0958C12.7154 58.8939 6.31066 56.9128 0.208252 54.1946C3.77106 37.1332 12.2515 41.3986 17.8115 37.5246L18.9456 36.521L19.066 36.4106C20.6618 44.6402 23.803 50.2805 27.6168 52.6691C28.1085 49.1665 28.6204 45.6438 29.0118 42.1111H32.3237C32.7351 45.6739 33.2269 49.1364 33.7187 52.6691C37.5324 50.2805 40.6737 44.6402 42.2694 36.4106L42.3898 36.521L43.5239 37.5246C44.5357 38.1908 45.6468 38.6921 46.8157 39.01V43.1549H44.6379Z" fill="#A0A0AB"/>
+                                </svg>
+                                
+                            <h5 style="margin-top: 10px; font-weight:bold">Personal Loans<br/><br/></h5>
+                        </div>
+                       
+                      </div>
+                     
+                  </div>
+                 
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!--/ eCommerce statistic -->
+
+
+<!-- Recent Transactions -->
+<div class="row">
+  <div id="recent-transactions" class="col-12">
+      <div class="card">
+          <div class="card-header">
+              <h4 class="card-title">Recent Transactions</h4>
+              <a class="heading-elements-toggle"><i class="la la-ellipsis-v font-medium-3"></i></a>
+              <div class="heading-elements">
+                  <ul class="list-inline mb-0">
+                      <li><a class="btn btn-sm btn-danger box-shadow-2 round btn-min-width pull-right" href="invoice-summary.html" target="_blank">Invoice Summary</a></li>
+                  </ul>
+              </div>
+          </div>            
+          <div class="card-content">                
+              <div class="table-responsive">
+                  <table id="recent-orders" class="table table-hover table-xl mb-0">
+                      <thead>
+                          <tr>
+                              <th class="border-top-0">Status</th>                                
+                              <th class="border-top-0">Invoice#</th>
+                              <th class="border-top-0">Customer Name</th>
+                              <th class="border-top-0">Products</th>
+                              <th class="border-top-0">Categories</th>
+                              <th class="border-top-0">Shipping</th>
+                              <th class="border-top-0">Amount</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr>
+                              <td class="text-truncate"><i class="la la-dot-circle-o success font-medium-1 mr-1"></i> Paid</td>
+                              <td class="text-truncate"><a href="#">INV-001001</a></td>
+                              <td class="text-truncate">
+                                  <span class="avatar avatar-xs">
+                                      <img class="box-shadow-2" src="../../../app-assets/images/portrait/small/avatar-s-4.png" alt="avatar">
+                                  </span>
+                                  <span>Elizabeth W.</span>
+                              </td>
+                              <td class="text-truncate p-1">
+                                  <ul class="list-unstyled users-list m-0">                                               
+                                      <li data-toggle="tooltip" data-popup="tooltip-custom" data-original-title="Kimberly Simmons" class="avatar avatar-sm pull-up">
+                                          <img class="media-object rounded-circle no-border-top-radius no-border-bottom-radius" src="../../../app-assets/images/portfolio/portfolio-1.jpg" alt="Avatar">
+                                      </li>
+                                      <li data-toggle="tooltip" data-popup="tooltip-custom" data-original-title="Willie Torres" class="avatar avatar-sm pull-up">
+                                          <img class="media-object rounded-circle no-border-top-radius no-border-bottom-radius" src="../../../app-assets/images/portfolio/portfolio-2.jpg" alt="Avatar">
+                                      </li>
+                                      <li data-toggle="tooltip" data-popup="tooltip-custom" data-original-title="Rebecca Jones" class="avatar avatar-sm pull-up">
+                                          <img class="media-object rounded-circle no-border-top-radius no-border-bottom-radius" src="../../../app-assets/images/portfolio/portfolio-4.jpg" alt="Avatar">
+                                      </li>
+                                      <li class="avatar avatar-sm">                                            
+                                          <span class="badge badge-info">+1 more</span>
+                                      </li>
+                                  </ul>
+                              </td>
+                              <td>
+                                  <button type="button" class="btn btn-sm btn-outline-danger round">Food</button>
+                              </td>
+                              <td>
+                                  <div class="progress progress-sm mt-1 mb-0 box-shadow-2">
+                                      <div class="progress-bar bg-gradient-x-danger" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                              </td>
+                              <td class="text-truncate">$ 1200.00</td>
+                          </tr>
+                          <tr>
+                              <td class="text-truncate"><i class="la la-dot-circle-o danger font-medium-1 mr-1"></i> Declined</td>
+                              <td class="text-truncate"><a href="#">INV-001002</a></td>
+                              <td class="text-truncate">
+                                  <span class="avatar avatar-xs">
+                                      <img class="box-shadow-2" src="../../../app-assets/images/portrait/small/avatar-s-5.png" alt="avatar">
+                                  </span>
+                                  <span>Doris R.</span>
+                              </td>
+                              <td class="text-truncate p-1">
+                                  <ul class="list-unstyled users-list m-0">                                               
+                                      <li data-toggle="tooltip" data-popup="tooltip-custom" data-original-title="Kimberly Simmons" class="avatar avatar-sm pull-up">
+                                          <img class="media-object rounded-circle no-border-top-radius no-border-bottom-radius" src="../../../app-assets/images/portfolio/portfolio-5.jpg" alt="Avatar">
+                                      </li>
+                                      <li data-toggle="tooltip" data-popup="tooltip-custom" data-original-title="Willie Torres" class="avatar avatar-sm pull-up">
+                                          <img class="media-object rounded-circle no-border-top-radius no-border-bottom-radius" src="../../../app-assets/images/portfolio/portfolio-6.jpg" alt="Avatar">
+                                      </li>                                        
+                                      <li class="avatar avatar-sm">                                            
+                                          <span class="badge badge-info">+2 more</span>
+                                      </li>
+                                  </ul>
+                              </td>
+                              <td>
+                                  <button type="button" class="btn btn-sm btn-outline-warning round">Electronics</button>
+                              </td>
+                              <td>
+                                  <div class="progress progress-sm mt-1 mb-0 box-shadow-2">
+                                      <div class="progress-bar bg-gradient-x-warning" role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                              </td>
+                              <td class="text-truncate">$ 1850.00</td>
+                          </tr>
+                          <tr>
+                              <td class="text-truncate"><i class="la la-dot-circle-o warning font-medium-1 mr-1"></i> Pending</td>
+                              <td class="text-truncate"><a href="#">INV-001003</a></td>
+                              <td class="text-truncate">
+                                  <span class="avatar avatar-xs">
+                                      <img class="box-shadow-2" src="../../../app-assets/images/portrait/small/avatar-s-6.png" alt="avatar">
+                                  </span>
+                                  <span>Megan S.</span>
+                              </td>
+                              <td class="text-truncate p-1">
+                                  <ul class="list-unstyled users-list m-0">                                               
+                                      <li data-toggle="tooltip" data-popup="tooltip-custom" data-original-title="Kimberly Simmons" class="avatar avatar-sm pull-up">
+                                          <img class="media-object rounded-circle no-border-top-radius no-border-bottom-radius" src="../../../app-assets/images/portfolio/portfolio-2.jpg" alt="Avatar">
+                                      </li>
+                                      <li data-toggle="tooltip" data-popup="tooltip-custom" data-original-title="Willie Torres" class="avatar avatar-sm pull-up">
+                                          <img class="media-object rounded-circle no-border-top-radius no-border-bottom-radius" src="../../../app-assets/images/portfolio/portfolio-5.jpg" alt="Avatar">
+                                      </li>
+                                  </ul>
+                              </td>
+                              <td>
+                                  <button type="button" class="btn btn-sm btn-outline-success round">Groceries</button>
+                              </td>
+                              <td>
+                                  <div class="progress progress-sm mt-1 mb-0 box-shadow-2">
+                                      <div class="progress-bar bg-gradient-x-success" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                              </td>
+                              <td class="text-truncate">$ 3200.00</td>
+                          </tr>
+                          <tr>
+                              <td class="text-truncate"><i class="la la-dot-circle-o success font-medium-1 mr-1"></i> Paid</td>
+                              <td class="text-truncate"><a href="#">INV-001004</a></td>
+                              <td class="text-truncate">
+                                  <span class="avatar avatar-xs">
+                                      <img class="box-shadow-2" src="../../../app-assets/images/portrait/small/avatar-s-7.png" alt="avatar">
+                                  </span>
+                                  <span>Andrew D.</span>
+                              </td>
+                              <td class="text-truncate p-1">
+                                  <ul class="list-unstyled users-list m-0">                                               
+                                      <li data-toggle="tooltip" data-popup="tooltip-custom" data-original-title="Kimberly Simmons" class="avatar avatar-sm pull-up">
+                                          <img class="media-object rounded-circle no-border-top-radius no-border-bottom-radius" src="../../../app-assets/images/portfolio/portfolio-6.jpg" alt="Avatar">
+                                      </li>
+                                      <li data-toggle="tooltip" data-popup="tooltip-custom" data-original-title="Willie Torres" class="avatar avatar-sm pull-up">
+                                          <img class="media-object rounded-circle no-border-top-radius no-border-bottom-radius" src="../../../app-assets/images/portfolio/portfolio-1.jpg" alt="Avatar">
+                                      </li>
+                                      <li class="avatar avatar-sm">                                            
+                                          <span class="badge badge-info">+1 more</span>
+                                      </li>
+                                  </ul>
+                              </td>
+                              <td>
+                                  <button type="button" class="btn btn-sm btn-outline-info round">Apparels</button>
+                              </td>
+                              <td>
+                                  <div class="progress progress-sm mt-1 mb-0 box-shadow-2">
+                                      <div class="progress-bar bg-gradient-x-info" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                              </td>
+                              <td class="text-truncate">$ 4500.00</td>
+                          </tr>
+                          <tr>
+                              <td class="text-truncate"><i class="la la-dot-circle-o success font-medium-1 mr-1"></i> Paid</td>
+                              <td class="text-truncate"><a href="#">INV-001005</a></td>
+                              <td class="text-truncate">
+                                  <span class="avatar avatar-xs">
+                                      <img class="box-shadow-2" src="../../../app-assets/images/portrait/small/avatar-s-9.png" alt="avatar">
+                                  </span>
+                                  <span>Walter R.</span>
+                              </td>
+                              <td class="text-truncate p-1">
+                                  <ul class="list-unstyled users-list m-0">                                               
+                                      <li data-toggle="tooltip" data-popup="tooltip-custom" data-original-title="Kimberly Simmons" class="avatar avatar-sm pull-up">
+                                          <img class="media-object rounded-circle no-border-top-radius no-border-bottom-radius" src="../../../app-assets/images/portfolio/portfolio-5.jpg" alt="Avatar">
+                                      </li>
+                                      <li data-toggle="tooltip" data-popup="tooltip-custom" data-original-title="Willie Torres" class="avatar avatar-sm pull-up">
+                                          <img class="media-object rounded-circle no-border-top-radius no-border-bottom-radius" src="../../../app-assets/images/portfolio/portfolio-3.jpg" alt="Avatar">
+                                      </li>
+                                  </ul>
+                              </td>
+                              <td>
+                                  <button type="button" class="btn btn-sm btn-outline-danger round">Food</button>
+                              </td>
+                              <td>
+                                  <div class="progress progress-sm mt-1 mb-0 box-shadow-2">
+                                      <div class="progress-bar bg-gradient-x-danger" role="progressbar" style="width: 35%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                              </td>
+                              <td class="text-truncate">$ 1500.00</td>
+                          </tr>
+                      </tbody>
+                  </table>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!--/ Recent Transactions -->
+
+<!--/ Basic Horizontal Timeline -->
+      </div>
+    </div>
+  </div>
+  <!-- END: Content-->
+  {% include 'partials/dashboard/footer.html' %}
+
+{% endblock content %}
+

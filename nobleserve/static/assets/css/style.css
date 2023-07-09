@@ -7275,6 +7275,9 @@ article .content-feature-list,
 
 
 
+.banner-slider{
+  margin-top: 30px;
+}
 .banner-slider-area .owl-dots{
   position:absolute;
   margin-top:0!important;
@@ -7330,13 +7333,14 @@ article .content-feature-list,
                     color:#ff9083}
                     
                     .banner-slider-content h1{
-                      font-size:44px;
+                      font-size:39px;
                       font-family: 'Cabinet Grotesk', sans-serif;
                       color:#063873;
                       line-height:1.2;
                       margin-bottom:20px;
                       margin-top:10px}
                       
+
                       .banner-slider-content p{
                         margin-bottom:30px;
                         max-width:550px}
@@ -7356,7 +7360,8 @@ article .content-feature-list,
         }
                               
   .banner-area-two .shape-circle img{
-    max-width:100px
+    max-width:100px;
+    
   }
 
   .banner-content-two{

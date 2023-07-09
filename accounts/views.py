@@ -29,24 +29,20 @@ def check_role_customer(user):
 
 @login_required(login_url='login')
 def myAccount(request):
-    # request.user is the current loggedin user
+    # request.user is the current loggedin user (based on role)
     user = request.user
     redirectUrl = detectUser(user)
     return redirect(redirectUrl)
 
 # homepage
-
-
 def home(request):
     return render(request, 'pages/home.html')
 
 # Register
-
-
 def register(request):
     if request.user.is_authenticated:
         messages.warning(request, 'You are already logged in!')
-        return redirect('customerDashboard')
+        return redirect('myAccount')
     elif request.method == 'POST':
         # store the data and create the user
         form = UserForm(request.POST)
@@ -99,7 +95,8 @@ def login(request):
     # checking that the user is already loggedin
     if request.user.is_authenticated:
         messages.warning(request, 'You are already logged in!')
-        return redirect('customerDashboard')
+        #very important so as to enter the role account.
+        return redirect('myAccount')
     elif request.method == 'POST':
         email = request.POST['email']
         password = request.POST['password']
@@ -108,7 +105,7 @@ def login(request):
 
         if user is not None:
             auth.login(request, user)
-            return redirect('customerDashboard')
+            return redirect('myAccount')
         else:
             messages.error(request, 'Invalid login credentials')
             return redirect('login')
@@ -117,16 +114,29 @@ def login(request):
 
 @login_required(login_url='login')
 @user_passes_test(check_role_staff)
+
 # Staff Dashboard
 def staffDashboard(request):
-    return render(request, 'accounts/staffDashboard.html')
+    # get the userprofile of the loggedin user and pass to the template
+    profile = get_object_or_404(UserProfile, user=request.user)
+    context = {
+        'profile': profile,
+
+    }
+    return render(request, 'accounts/staffDashboard.html', context)
 
 
 @login_required(login_url='login')
 @user_passes_test(check_role_customer)
 # Customer Dashboard
 def customerDashboard(request):
-    return render(request, 'accounts/custDashboard.html')
+     # get the userprofile of the loggedin user and pass to the template
+    profile = get_object_or_404(UserProfile, user=request.user)
+    context = {
+        'profile': profile,
+
+    }
+    return render(request, 'accounts/custDashboard.html', context)
 
 # logout
 
