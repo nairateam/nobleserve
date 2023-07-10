@@ -205,83 +205,7 @@
     {% include 'partials/loanCalculator.html' %}
     {% include 'partials/loantypes.html' %}
 
-    <section class="app-wrap style2 ptb-100">
-        <div class="container">
-        <div class="row gx-5 align-items-center">
-        <div class="col-lg-6">
-
-            <div class="content-title style1">
-                <span>Our features</span>
-                <h2 class="pb-30">What we Offer</h2>
-               
-                <div class="accordion  "  id="accordionExample">
-                    <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    <span style="background-color:#F8F8F8;  color: #063873">
-                    <i class="ri-arrow-up-s-line minus"></i>
-                    <i class="ri-arrow-down-s-line plus "></i>
-                    </span>
-                   Credit and Loans
-                    </button>
-                    </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority hasuffered alteration in some form, by injected humour, or randomised words </p>
-                    </div>
-                    </div>
-                    </div>
-                    <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        <span style="background-color:#F8F8F8;  color: #063873">
-                    <i class="ri-arrow-up-s-line minus"></i>
-                    <i class="ri-arrow-down-s-line plus "></i>
-                    </span>
-                  Funds Management
-                    </button>
-                    </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse " aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                    <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure.</p>
-                    </div>
-                    </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            <span style="background-color:#F8F8F8;  color: #063873">
-                        <i class="ri-arrow-up-s-line minus"></i>
-                        <i class="ri-arrow-down-s-line plus "></i>
-                        </span>
-                     Advisory and Strategy
-                        </button>
-                        </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse " aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                        <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure.</p>
-                        </div>
-                        </div>
-                        </div>
-                  
-                    
-                   
-                    </div>  </div>
-               
-              
-       
-        </div>
-        <div class="col-lg-6">
-        <div class="app-content">
-            <div class="app-img-wrap">
-                <img src="{% static 'assets/img/shape-5.png' %}" alt="Image" class="app-shape-one bounce">
-                <img src="{% static 'assets/img/app-screen.png' %}" alt="Image">
-                </div>
-        </div>
-        </div>
-        </div> 
-        </div>
-        </section>
+   
    
         
         {% include 'partials/howwework.html' %}
@@ -297,7 +221,7 @@
 
         <div class="app-content">
             <div class="content-title style2">
-            <h1>Get Instant Loans on the Go with NoablePay! Download Now!</h1>
+            <h1>Get Instant Loans on the Go with NoblePay! Lanching Soon!</h1>
             <p>Access quick and hassle-free loans with just a few taps.</p>
             </div>
             <div class="app-btn text-left" style="margin-left:-10px">
@@ -425,6 +349,26 @@
     </div>
     </section>
 
+    <section class="app-wrap  ptb-100 bg-rock">
+        <div class="container">
+        <div class="row align-items-center">
+        <div class="col-lg-7 col-md-8">
+        <div class="app-content sm-center">
+        <div class="content-title style2">
+        <h2>Get Personal Loan up to 5Million in 24hours!</h2>
+        <span>Corporate Organizations and Small-Medium Enterprises can access loans of up to 500M Naira for growth and expansion activities.</span>
+        </div>
+        </div>
+        </div>
+        <div class="col-lg-5 col-md-4 text-md-end sm-center">
+            <div class="hero-btn">
+                <a href="{% url 'loan' %}" class="btn style1">Apply Now<i class="ri-arrow-right-s-line"></i></a></a>
+                </div>
+        </div>
+        </div>
+        </div>
+        </section>
+        
     
     {% include 'partials/ourBlog.html' %}
     {% include 'partials/ctawrap1.html' %}

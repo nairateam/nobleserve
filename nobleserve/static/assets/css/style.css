@@ -3193,7 +3193,7 @@ input[type="submit"]:hover {
 
 .hero-wrap.style2 {
   background-color: #FAFAFC;
-  padding: 100px 0;
+  padding-top: 100px;
   margin-top: 0px;
   z-index: 1;
   position: relative;
@@ -4568,6 +4568,19 @@ font-family: 'Cabinet Grotesk', sans-serif;
 -------------------------------*/
 .app-wrap {
   position: relative;
+  color:#fff;
+}
+
+.app-wrap .content-title h2{
+  color:#fff;
+}
+.app-wrap .content-title span{
+  color:#fff;
+  line-height: 22px;
+}
+
+.bg-rock{
+  background-color: #083D7C;
 }
 
 .app-wrap.style1:before {
