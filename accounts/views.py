@@ -107,7 +107,7 @@ def login(request):
             auth.login(request, user)
             return redirect('myAccount')
         else:
-            messages.error(request, 'Invalid login credentials')
+            messages.error(request, 'Invalid login credentials!')
             return redirect('login')
     return render(request, 'accounts/login.html')
 
