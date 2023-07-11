@@ -14,7 +14,11 @@
     <ul class="navbar-nav ms-auto">
 
         <li class="nav-item active">
-            <a href="{% url 'loan' %}" class="nav-link">Loans</a>
+            <a href="{% url 'home' %}" class="nav-link">Home</a>
+            </li>
+
+        <li class="nav-item ">
+            <a href="{% url 'products' %}" class="nav-link">Products</a>
             </li>
   
   
@@ -34,6 +38,9 @@
     <li class="nav-item">
         <a href="{% url 'faq' %}" class="nav-link">FAQs</a>
         </li>
+        <li class="nav-item">
+            <a href="{% url 'blog' %}" class="nav-link">Blog</a>
+            </li>
 
     <li class="nav-item">
     <a href="{% url 'contact' %}" class="nav-link">Contact Us</a>

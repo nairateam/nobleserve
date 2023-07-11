@@ -5880,7 +5880,7 @@ border-radius: 10px 10px 0px 0px;
 }
 
 .pricing-table.style1 .pricing-header {
-  background: rgba(0, 169, 164, 0.08);
+  background: #063873;
 }
 
 .pricing-table.style1 .pricing-header:after {
@@ -7332,7 +7332,12 @@ article .content-feature-list,
               opacity:1}
               
               .banner-slider-item{
-                padding:100px 0}
+                padding:100px 0;
+              }
+              .banner-slider-img{
+                padding-left: 60px;
+                margin-top: 10px;
+              }
                 
                 .banner-slider-content{
                   max-width:710px;
@@ -7348,6 +7353,10 @@ article .content-feature-list,
                       line-height:1.2;
                       margin-bottom:20px;
                       margin-top:10px}
+
+                      .push{
+                        margin-left: 60px;
+                      }
                       
 
                       .banner-slider-content p{
@@ -7424,3 +7433,6 @@ margin-left: 0px;
       }
       
 }
+
+
+

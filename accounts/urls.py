@@ -3,7 +3,8 @@ from . import views
 
 urlpatterns = [
     path('', views.home, name='home'),
-    path('loan/', views.loan, name='loan'),
+    path('products/', views.products, name='products'),
+    path('blog/', views.blog, name='blog'),
     path('contact/', views.contact, name='contact'),
     path('about/', views.about, name='about'),
     path('faq/', views.faq, name='faq'),
@@ -18,7 +19,7 @@ urlpatterns = [
 
     # service details
     path('Nobleserve Target Savings Plan/', views.ntsp, name='ntsp'),
-    path('Nobleserve Promissory Notes/', views.npn, name='npn'),
+    path('The Nobleserve Naira Investment/', views.npn, name='npn'),
     path('Lease Financing/', views.lf, name='lf'),
     path('Corporate and Commercial Loans/', views.ccl, name='ccl'),
     path('Personal Loans/', views.pl, name='pl'),

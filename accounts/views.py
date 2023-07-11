@@ -148,8 +148,8 @@ def logout(request):
 
 
 # Loan
-def loan(request):
-    return render(request, 'pages/loan.html')
+def products(request):
+    return render(request, 'pages/products.html')
 
 
 # About
@@ -157,16 +157,16 @@ def about(request):
     return render(request, 'pages/about.html')
 
 # Contact
-
-
 def contact(request):
     return render(request, 'pages/contact.html')
 
 # faq
-
-
 def faq(request):
     return render(request, 'pages/faq.html')
+
+# BLog
+def blog(request):
+    return render(request, 'pages/blog.html')
 
 
 #services details page
