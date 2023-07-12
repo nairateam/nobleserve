@@ -168,6 +168,15 @@ def faq(request):
 def blog(request):
     return render(request, 'pages/blog.html')
 
+#blog Details
+def blogdetails1(request):
+    return render(request, 'pages/blogdetails/blogpost1.html')
+
+def blogdetails2(request):
+    return render(request, 'pages/blogdetails/blogpost2.html')
+
+def blogdetails3(request):
+    return render(request, 'pages/blogdetails/blogpost3.html')
 
 #services details page
 def ntsp(request):

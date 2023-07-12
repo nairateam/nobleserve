@@ -24,4 +24,9 @@ urlpatterns = [
     path('Corporate and Commercial Loans/', views.ccl, name='ccl'),
     path('Personal Loans/', views.pl, name='pl'),
 
+    #blog details 
+    path('blogdetails1/', views.blogdetails1, name='blogdetails1'),
+    path('blogdetails2/', views.blogdetails2, name='blogdetails2'),
+    path('blogdetails3/', views.blogdetails3, name='blogdetails3'),
+
 ]
