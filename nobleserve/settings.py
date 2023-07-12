@@ -28,7 +28,7 @@ SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG', cast=bool)
 
 ALLOWED_HOSTS = ['Fegor.pythonanywhere.com']
-#ALLOWED_HOSTS = []
+# ALLOWED_HOSTS = []
 
 # Application definition
 
@@ -44,8 +44,8 @@ INSTALLED_APPS = [
     'customers',
     'widget_tweaks',
     'django_countries'
-    
-   
+
+
 ]
 
 MIDDLEWARE = [
@@ -80,7 +80,7 @@ WSGI_APPLICATION = 'nobleserve.wsgi.application'
 
 
 # Database
-#https://docs.djangoproject.com/en/4.2/ref/settings/#databases
+# https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 # DATABASES = {
 #     'default': {
@@ -103,7 +103,7 @@ DATABASES = {
     }
 }
 
-#define it to use model.
+# define it to use model.
 AUTH_USER_MODEL = 'accounts.User'
 
 
