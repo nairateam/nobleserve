@@ -2648,10 +2648,12 @@ input[type="submit"]:hover {
   position: absolute;
   top: 6px;
   left: 0;
-  color: #00A79D;
+  color: #052E60;
   font-size: 15px;
   line-height: 0.8;
 }
+
+
 
 /*---------------------------------------
         Sign In CSS
