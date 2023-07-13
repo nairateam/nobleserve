@@ -192,3 +192,7 @@ def ccl(request):
 
 def pl(request):
     return render(request, 'pages/services/personalloans.html')
+
+
+def teams(request):
+    return render(request, 'pages/teams.html')
