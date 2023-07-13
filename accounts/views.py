@@ -114,7 +114,6 @@ def login(request):
 
 @login_required(login_url='login')
 @user_passes_test(check_role_staff)
-
 # Staff Dashboard
 def staffDashboard(request):
     # get the userprofile of the loggedin user and pass to the template
