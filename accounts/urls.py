@@ -18,6 +18,16 @@ urlpatterns = [
     path('staffDashboard/', views.staffDashboard, name='staffDashboard'),
     path('customerDashboard/', views.customerDashboard, name='customerDashboard'),
 
+
+    ##Product Views
+    path('personalLoans/view/', views.personalLoans, name='personalLoans'),
+    path('personalLoanDetails/<int:pk>/view', views.personalLoanDetails, name='personalLoanDetails'),
+    path('PersonalLoanremoval/<int:pk>/confirm', views.confirm_personalloanremoval, name='confirm_personalloanremoval'),
+    path('PersonalLoan/<int:pk>/remove', views.remove_personalloan, name='remove_personalloan'),
+    path('performApproval/<int:pk>/approval', views.performApproval, name='performApproval'),
+    path('targetSavings/view/', views.targetSavings, name='targetSavings'),
+
+
     # service details
     path('Nobleserve Target Savings Plan/', views.ntsp, name='ntsp'),
     path('The Nobleserve Naira Investment/', views.npn, name='npn'),

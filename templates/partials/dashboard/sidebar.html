@@ -2,13 +2,15 @@
 
  <div class="main-menu menu-fixed menu-dark menu-accordion menu-shadow" id="sidebar"  data-scroll-to-active="true">
     <div class="main-menu-content" >
-      <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
-        <li class=" nav-item"><a href="{% url 'customerDashboard' %}"><i class="mbri-desktop"></i><span class="menu-title" data-i18n="Dashboard">Dashboard</span></a>
+      
+      
+      
+       <!-- Customer sidebar-nav -->
+       {% if user.is_authenticated and user.get_role == 'Customer'  %}
+      <ul style="margin-top:10px" class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+      
+        <li  class=" nav-item"><a href="{% url 'customerDashboard' %}"><i class="mbri-desktop"></i><span class="menu-title" data-i18n="Dashboard">Dashboard</span></a>
         </li>
-
-
-
-
         <li class=" nav-item"><a href="#"><i class="mbri-extension"></i><span class="menu-title" data-i18n="Apps">My Loan <br>Applications</span></a>
           <ul class="menu-content">
             <br>
@@ -27,17 +29,49 @@
        
     
      
-        <li class=" nav-item"><a href="#"><i class="ft-user"></i> <span class="menu-title" data-i18n="Pages">Profile</span></a>
-        </li>
-
-         
-        <li class=" nav-item"><a href="#"><i class="mbri-user"></i><span class="menu-title" data-i18n="Forms">KYC <br>Verification</span></a>
-        </li>
-       
-        <li class=" nav-item"><a href="#"><i class="mbri-edit"></i><span class="menu-title" data-i18n="Forms">Account <br> Settings</span></a>
-        </li>
-      
+        <li class=" nav-item"><a href="#"><i class="ft-user"></i> <span class="menu-title" data-i18n="Pages">Profile</span></a></li>
+        <li class=" nav-item"><a href="#"><i class="mbri-user"></i><span class="menu-title" data-i18n="Forms">KYC <br>Verification</span></a></li>
+        <li class=" nav-item"><a href="#"><i class="mbri-edit"></i><span class="menu-title" data-i18n="Forms">Account <br> Settings</span></a></li>
       </ul>
+
+          <!-- Staff sidebar-nav -->
+          {% else %}
+          <ul style="margin-top:10px"  class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+   
+          <li class=" nav-item"><a href="{% url 'staffDashboard' %}"><i class="mbri-desktop"></i><span class="menu-title" data-i18n="Dashboard">Dashboard</span></a>
+          </li>
+          <li class=" nav-item"><a href="#"><i class="mbri-extension"></i><span class="menu-title" data-i18n="Apps">View<br>Applications</span></a>
+            <ul class="menu-content">
+              <br>
+              <li class="active"><a class="menu-item" href="{% url 'targetSavings' %}"><span> <b>&#8594;</b> Target Savings Plan</span></a>
+              </li>
+              <li><a class="menu-item" href="{% url 'staffDashboard' %}"><span><b>&#8594;</b> Lease financing</span></a>
+              </li>
+              <li><a class="menu-item" href="{% url 'staffDashboard' %}"><span><b>&#8594;</b> Corporate and commercial Loans</span></a>
+              </li>
+              <li><a class="menu-item" href="{% url 'personalLoans' %}"><span> <b>&#8594;</b> Personal Loans</span></a>
+              </li>
+              <li><a class="menu-item" href="{% url 'staffDashboard' %}"><span><b>&#8594;</b> Funds Management</span></a>
+              </li>
+            </ul>
+          </li>
+         
+      
+       
+          <li class=" nav-item"><a href="#"><i class="ft-user"></i> <span class="menu-title" data-i18n="Pages">Profile</span></a></li>
+  
+          <li class=" nav-item"><a href="#"><i class="mbri-edit"></i><span class="menu-title" data-i18n="Forms">User<br>Management</span></a></li>
+        </ul>
+
+          {% endif %}
+
+
+
+
+  
+
+
+
     </div>
   </div>
 

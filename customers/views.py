@@ -12,7 +12,6 @@ from django.urls import reverse
 from .models import PersonalLoan, TargetSaving
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
-
 import json
 
 def check_role_staff(user):
@@ -79,6 +78,7 @@ def addpersonalloan(request):
         form = PersonalLoanForm()
     context = {
         'form': form,
+        'profile': profile,
     }
     return render(request, 'customers/addpersonal_loan.html', context)
 

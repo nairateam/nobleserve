@@ -34,7 +34,7 @@
             </div>            
             <div class="card-content">                
                 <div class="table-responsive">
-                    <table id="recent-orders" class="table table-hover table-xl mb-0">
+                    <table id="recent-orders" class="table table-hover  table-bordered table-xl mb-0">
                         <thead>
                             <tr>
                                 <th class="border-top-0">Transaction ID</th>                                
@@ -96,7 +96,60 @@
                     </table>
                 </div>
             </div>
+
+
+            <div class="card-body">
+                <div class="pagination-contant">         
+                    <!-- start pagination contant --> 
+                  
+                    Showing {{page_obj.number}} of {{ page_obj.paginator.num_pages }} out of {{ Personalloans.count}} entries
+        
+                    {% if page_obj.has_other_pages %}
+                          <ul  id="border-pagination" class="pagination align-right float-right mr-auto"">
+                            {% if page_obj.has_previous %}
+                                <li class="page-item">
+                                    <a class="page-link" href="?page={{page_obj.previous_page_number}}"><i class="fa fa-angle-left"></i></a>
+                                </li>
+                            {% else %}
+                              <li class="page-item disabled">
+                                  <a class="page-link"><i class="fa fa-angle-left"></i></a>
+                              </li>
+                            {% endif %}
+        
+                            {% for i in page_obj.paginator.page_range %}
+                              {% if page_obj.number == i %}
+                                <li class="page-item"><a class="page-link active" href="#">{{i}}</a></li>
+                              {% else %}
+                                <li class="page-item"><a class="page-link" href="?page={{i}}">{{i}}</a></li>
+                              {% endif %}
+                            {% endfor %}
+        
+                            {% if page_obj.has_next %}
+                                <li class="page-item">
+                                    <a class="page-link" href="?page={{page_obj.next_page_number}}"><i class="fa fa-angle-right"></i></a>
+                                </li>
+                            {% else %}
+                              <li class="page-item disabled">
+                                  <a class="page-link"><i class="fa fa-angle-right"></i></a>
+                              </li>
+                            {% endif %}
+        
+                          </ul>
+                        {% endif %}
+                  
+                 </div>  
+                </div>  
+            <!-- end pagination section -->
         </div>
+
+
+
+
+      
+
+
+
+
     </div>
 </div>
 <!--/ Recent Transactions -->

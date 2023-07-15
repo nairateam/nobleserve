@@ -36,6 +36,18 @@ class PersonalLoanForm(forms.ModelForm):
        
 
 
+class PerformApprovalLoanForm(forms.ModelForm):
+
+    class Meta:
+        model = PersonalLoan
+        fields = [ 'status']
+         # To make the form show the given style of our template
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        for visible in self.visible_fields():
+            visible.field.widget.attrs['class'] = 'form-control'
+
+
 # Target Savings-- for DOB make sure you install the DateOfBirthWidget()module
 class TargetSavingsForm(forms.ModelForm):
     class Meta:
