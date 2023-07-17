@@ -6978,11 +6978,25 @@ padding-top: 20px;
 
 }
 
+#desktop {
+  display: block;
+}
+
+#mobl{
+  display: none;
+}
 
 .auth-cover-left .hero-content {
   padding-left: 60px;
   padding-top: 60px;
 }
+
+.auth-cover-left .hero-content  .mobile{
+  padding-left: 60px;
+  padding-top: 60px;
+  display: none;
+}
+
 
 
 .auth-cover-left .hero-content h1{
@@ -7011,7 +7025,6 @@ padding-top: 20px;
 }
 
 
-
 .auth-img-cover-login {
 
 	-webkit-transform: scaleX(-1);
@@ -7019,13 +7032,6 @@ padding-top: 20px;
 	transform: scaleX(-1);
 
 }
-
-
-
-
-
-
-
 .error {
 
     color: #dc3545;
@@ -7066,11 +7072,22 @@ form select.error:focus {
 	}
 
   .auth-cover-left {
+   display: none;
+  }
+  #desktop {
+    display: none;
+  }
+
+  #mobl{
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .arroico{
     display: none;
   }
 
 
-  
 	.authentication-reset-password {
 
 		height: auto;
@@ -7094,6 +7111,12 @@ form select.error:focus {
   padding-top: 50px;
   
 }
+.auth-cover-left .hero-content  .mobile{
+  padding-left: 60px;
+  padding-top: 60px;
+  display:contents;
+}
+
 
 
 .auth-cover-left .hero-content h1{

@@ -18,7 +18,7 @@
 
                 <div  class="col-12 col-xl-7 col-xxl-8 auth-cover-left">
 
-                    <div class="hero-content style1">
+                    <div class="hero-content style1" id="desktop">
                         <a href="{% url 'home' %}">
 <img class="logo-dark" src="{% static 'assets/img/logo_white.svg' %}"  width="130px" alt="logo">
   
@@ -28,6 +28,9 @@
                         <p>We're excited to help you secure the funds you need.  <br/> To get started, please complete the sign-up process  <br/> below and  create your loan account.</p>
                      
                     </div>
+
+
+                  
                 </div>
 
                 <div class="col-12 col-xl-5 col-xxl-4 auth-cover-right align-items-center justify-content-center">
@@ -36,10 +39,18 @@
                             <div class="">
                                 
                                 <div class="text-left mb-4">
-                                   <a href="{% url 'home' %}"><svg width="50"  height="50" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M23.7143 38L25.2143 36.5L17.7858 29.0714H42.2858V26.9286H17.7858L25.2143 19.5L23.7143 18L13.7143 28L23.7143 38Z" fill="#101828"/>
-                                    <rect x="0.5" y="0.5" width="55" height="55" rx="27.5" stroke="#101828"/>
-                                    </svg></a> 
+                                    <div   id="mobl" class="hero-content style1" >
+                                        <a href="{% url 'home' %}">
+                <img class="logo-dark" src="{% static 'assets/img/nobleserve logo 1.png' %}"  width="130px" alt="logo">
+                  
+                                        </a>
+                                        
+                                    </div>
+                                    <a href="{% url 'home' %}"  class="arroico">
+                                        <svg width="50"  height="50" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M23.7143 38L25.2143 36.5L17.7858 29.0714H42.2858V26.9286H17.7858L25.2143 19.5L23.7143 18L13.7143 28L23.7143 38Z" fill="#101828"/>
+                                        <rect x="0.5" y="0.5" width="55" height="55" rx="27.5" stroke="#101828"/>
+                                        </svg></a> 
                                     <h4 class="">Let's get Started!</h4>
                                     <p class="mb-0">Already have an account? <a class="text-bold" href="{% url 'login' %}">Sign in</a></p>
                                 </div>

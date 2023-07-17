@@ -25,10 +25,11 @@
 <section class="team-wrap pt-100 pb-75">
     <div class="container">
     <div class="row justify-content-center">
-    <div class="col-xl-3 col-lg-4 col-md-6">
+    <div class="col-xl-3 col-lg-4 col-md-6"  data-bs-toggle="modal"
+    data-bs-target="#exampleModal">
     <div class="team-card style1">
     <div class="team-img">
-    <img src="{% static 'assets/img/team/CEO.jpg' %}"  style="width:300px; height:300px" alt="Image">
+    <img src="{% static 'assets/img/team/CEO.jpg' %}"  alt="Image">
     <ul class="social-profile list-style style1">
     <li>
     <a target="_blank" href="https://instagram.com">
@@ -55,15 +56,23 @@
     <div class="team-info-wrap">
     <div class="team-info">
     <h3>Oluwatosin Ilesanmi  </h3>
-    <span>Managing Director/CEO <br><br>   </span>
+    <span>Managing Director/CEO <br><br> </span>
     </div>
     </div>
     </div>
     </div>
-    <div class="col-xl-3 col-lg-4 col-md-6">
+
+
+
+
+
+
+    <div class="col-xl-3 col-lg-4 col-md-6"  data-bs-toggle="modal"
+    data-bs-target="#exampleModal2" >
     <div class="team-card style1">
-    <div class="team-img">
-        <img src="{% static 'assets/img/team/HHC.jpg' %}"  style="width:300px; height:300px" alt="Image">
+
+    <div class="team-img" >
+        <img src="{% static 'assets/img/team/HHC.jpg' %}"  alt="Image">
     <ul class="social-profile list-style style1">
     <li>
     <a target="_blank" href="https://instagram.com">
@@ -87,9 +96,6 @@
     </li>
     </ul>
     </div>
-
-
-
     <div class="team-info-wrap">
     <div class="team-info">
     <h3>Oluwatoyin Aghomi</h3>
@@ -98,10 +104,16 @@
     </div>
     </div>
     </div>
-    <div class="col-xl-3 col-lg-4 col-md-6">
+
+
+
+
+
+    <div class="col-xl-3 col-lg-4 col-md-6" data-bs-toggle="modal"
+    data-bs-target="#exampleModal3">
     <div class="team-card style1">
     <div class="team-img">
-        <img src="{% static 'assets/img/team/HCC.jpg' %}"  style="width:300px; height:300px" alt="Image">
+        <img src="{% static 'assets/img/team/HCC.jpg' %}"  alt="Image">
     <ul class="social-profile list-style style1">
      <li>
     <a target="_blank" href="https://instagram.com">
@@ -136,10 +148,11 @@
 
 
 
-    <div class="col-xl-3 col-lg-4 col-md-6">
+    <div class="col-xl-3 col-lg-4 col-md-6" data-bs-toggle="modal"
+    data-bs-target="#exampleModal4">
     <div class="team-card style1">
     <div class="team-img">
-        <img src="{% static 'assets/img/team/HRMC.jpg' %}"  style="width:300px; height:300px" alt="Image">
+        <img src="{% static 'assets/img/team/HRMC.jpg' %}"   alt="Image">
 
  
     <ul class="social-profile list-style style1">
@@ -179,10 +192,11 @@
 
 
     
-    <div class="col-xl-3 col-lg-4 col-md-6">
+    <div class="col-xl-3 col-lg-4 col-md-6" data-bs-toggle="modal"
+    data-bs-target="#exampleModal5">
         <div class="team-card style1">
         <div class="team-img">
-            <img src="{% static 'assets/img/team/HRC.png' %}"  style="width:300px; height:300px" alt="Image">
+            <img src="{% static 'assets/img/team/HRC.png' %}"  alt="Image">
     
      
         <ul class="social-profile list-style style1">
@@ -211,22 +225,21 @@
         <div class="team-info-wrap">
         <div class="team-info">
         <h3>Temidayo Oni        </h3>
-        <span>Head, Retail Credits & Business Development</span>
+        <span>Head, Retail Credits & Business Development</span> <br>
         </div>
         </div>
         </div>
         </div>
-
-
 
 
 
 
         
-    <div class="col-xl-3 col-lg-4 col-md-6">
+    <div class="col-xl-3 col-lg-4 col-md-6" data-bs-toggle="modal"
+    data-bs-target="#exampleModal6">
         <div class="team-card style1">
         <div class="team-img">
-            <img src="{% static 'assets/img/team/HFO.jpg' %}"  style="width:300px; height:300px" alt="Image">
+            <img src="{% static 'assets/img/team/HFO.jpg' %}"   alt="Image">
     
      
         <ul class="social-profile list-style style1">
@@ -276,6 +289,10 @@
     </div>
     </div>
     </div>
+
+
+    
+    {% include 'partials/team/teamsdetails_modal.html' %}
     </section>
         </div>
         
