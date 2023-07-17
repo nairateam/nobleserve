@@ -3810,11 +3810,35 @@ font-family: 'Cabinet Grotesk', sans-serif;
  }
 
  .cta-wrap span{
- line-height: 20px;
+ line-height: 30px;
    }
 
 
 
+   @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .shopping-content .feature-text span {
+      margin-top: 30px;
+    }
+    
+    
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .shopping-content .feature-text span {
+      margin-top: 30px;
+    }
+
+  }
+  
+  @media only screen and (max-width: 991px) {
+  
+    .shopping-content .feature-text span {
+      margin-top: 20px;
+    }
+        
+  }
+  
+  
    
 /*-------------------------------
    Exchange Table  Section  CSS
@@ -7073,6 +7097,7 @@ form select.error:focus {
 
   .auth-cover-left {
    display: none;
+
   }
   #desktop {
     display: none;
@@ -7380,7 +7405,15 @@ article .content-feature-list,
               .banner-slider-img{
                 padding-left: 60px;
                 margin-top: 10px;
+               
               }
+
+              .banner-slider-img img{
+               
+                width:600px; 
+                height:450px;
+              }
+                
                 
                 .banner-slider-content{
                   max-width:710px;
@@ -7448,31 +7481,74 @@ article .content-feature-list,
 
     
 @media only screen and (max-width: 767px) {
-  .banner-slider-img {
-width: 100%;
-margin-left: 0px;
+
+  .banner-slider-img img{
+               
+    width:100%; 
+    height:100%;
+    margin-left: -50px;
   }
-  
+
+
+
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .banner-slider-img {
-    width: 100%;
-    margin-left: 0px;
+  
+  .banner-slider-img{  
+    margin-top: 50px;       
+    width:100%; 
+    height:100%;
+
+  }
+    
+  .banner-slider-img img{       
+    width:100%; 
+    height:100%;
+
+  }
+      
+      .push{
+        margin-left: 0px;
       }
       
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .banner-slider-img {
-    width: 100%;
+
+  .banner-slider-img{  
+    margin-top: 50px;       
+    width:100%; 
+    height:100%;
+
+  }
+  .banner-slider-img img{         
+    width:100%; 
+    height:100%;
+
+  }
+
+      .push{
+        margin-left: 0px;
       }
       
 }
 
 @media only screen and (max-width: 991px) {
-  .banner-slider-img {
-    width: 100%;
+
+  .banner-slider-img{  
+    margin-top: 50px;       
+    width:100%; 
+    height:100%;
+
+  }
+  .banner-slider-img img{      
+    width:100%; 
+    height:100%;
+  }
+
+      .push{
+        margin-left: 0px;
       }
       
 }
