@@ -29,7 +29,7 @@ DEBUG = str(os.environ.get('DEBUG')) == "1"  # 1 == True
 
 
 ENV_ALLOWED_HOST = os.environ.get('DJANGO_ALLOWED_HOST') or None
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['nobleserve-app-785n5.ondigitalocean.app']
 if not DEBUG:
     ALLOWED_HOSTS += [os.environ.get('DJANGO_ALLOWED_HOST')]
 
