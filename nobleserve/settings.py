@@ -29,7 +29,8 @@ DEBUG = str(os.environ.get('DEBUG')) == "1"  # 1 == True
 
 
 ENV_ALLOWED_HOST = os.environ.get('DJANGO_ALLOWED_HOST') or None
-ALLOWED_HOSTS = ['nobleserve-app-785n5.ondigitalocean.app']
+ALLOWED_HOSTS = ['nobleserve-app-785n5.ondigitalocean.app',
+                 'www.nobleservefinance.com']
 if not DEBUG:
     ALLOWED_HOSTS += [os.environ.get('DJANGO_ALLOWED_HOST')]
 
@@ -184,7 +185,6 @@ STORAGES = {
 # media files configuration
 MEDIA_URL = 'media/'
 MEDIA_ROOT = BASE_DIR / 'media'
-
 
 
 # Default primary key field type
