@@ -170,7 +170,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = BASE_DIR / 'staticfiles'
+STATIC_ROOT = BASE_DIR / 'static'
 STATICFILES_DIRS = [
     'nobleserve/static',
 ]
@@ -180,7 +180,7 @@ STORAGES = {
     "default": {
         "BACKEND": "django.core.files.storage.FileSystemStorage",
     },
-    "staticfiles": {
+    "static": {
         "BACKEND": "django.contrib.staticfiles.storage.StaticFilesStorage",
     },
 }
