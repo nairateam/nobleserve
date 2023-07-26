@@ -170,19 +170,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = BASE_DIR / 'staticfiles'
-
-#the static files for the project itself(css, js, images)
+STATIC_ROOT = BASE_DIR / 'static'
 STATICFILES_DIRS = [
     'nobleserve/static',
 ]
 
-# media files configuration
-MEDIA_URL = 'media/'
-MEDIA_ROOT = BASE_DIR / 'media'
-
-
-#to allow for static files showing in cloud host e.g digital oceans.
 STORAGES = {
     "default": {
         "BACKEND": "django.core.files.storage.FileSystemStorage",
@@ -192,6 +184,9 @@ STORAGES = {
     },
 }
 
+# media files configuration
+MEDIA_URL = 'media/'
+MEDIA_ROOT = BASE_DIR / 'media'
 
 
 # Default primary key field type
