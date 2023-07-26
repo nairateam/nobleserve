@@ -170,11 +170,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = BASE_DIR / 'static'
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 STATICFILES_DIRS = [
     'nobleserve/static',
 ]
 
+#to allow for static files showing in cloud host e.g digital oceans.
 STORAGES = {
     "default": {
         "BACKEND": "django.core.files.storage.FileSystemStorage",
