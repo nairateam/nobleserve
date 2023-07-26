@@ -177,6 +177,11 @@ STATICFILES_DIRS = [
     'nobleserve/static',
 ]
 
+# media files configuration
+MEDIA_URL = 'media/'
+MEDIA_ROOT = BASE_DIR / 'media'
+
+
 #to allow for static files showing in cloud host e.g digital oceans.
 STORAGES = {
     "default": {
@@ -187,9 +192,6 @@ STORAGES = {
     },
 }
 
-# media files configuration
-MEDIA_URL = '/media/'
-MEDIA_ROOT = BASE_DIR / 'media'
 
 
 # Default primary key field type
