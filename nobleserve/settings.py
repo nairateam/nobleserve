@@ -14,6 +14,7 @@ from pathlib import Path
 from decouple import config
 import os
 
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -22,15 +23,19 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY')
+# SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY')
+SECRET_KEY = 'django-insecure-x2wgq(5&_%9v0n4*hs2_9i5ne7c(x$f_ip!xa2ev+kbr3s3qzi'
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = str(os.environ.get('DEBUG')) == "1"  # 1 == True
 
 
 ENV_ALLOWED_HOST = os.environ.get('DJANGO_ALLOWED_HOST') or None
-ALLOWED_HOSTS = ['nobleserve-app-785n5.ondigitalocean.app',
-                 'www.nobleservefinance.com']
+# ALLOWED_HOSTS = ['nobleserve-app-785n5.ondigitalocean.app',
+#                  'www.nobleservefinance.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '*']
+
 if not DEBUG:
     ALLOWED_HOSTS += [os.environ.get('DJANGO_ALLOWED_HOST')]
 
